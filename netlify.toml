@@ -6,7 +6,6 @@ publish = "public"
 [build.environment]
  NODE_VERSION = "18.17.1"
  NPM_VERSION = "9.6.7"
- YARN_VERSION = "3.6.1"
 
 [[plugins]]
 package = "netlify-plugin-image-optim"
@@ -32,7 +31,7 @@ package = "netlify-plugin-gatsby-cache"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Access-Control-Allow-Origin = '''
-      https://rblartdesign.com,
+      https://dev2.viadelweb.com,
       https://m.rblartdesign.com,
       https://m.rblartdesign.com/stats.js,
       https://github.com, 
