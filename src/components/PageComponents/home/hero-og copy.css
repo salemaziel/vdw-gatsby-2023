@@ -1,0 +1,134 @@
+.SectionWaves {
+   @apply h-[95vh] m-0;
+   /* Animation */
+}
+@media (max-width: 768px) {
+   .SectionWaves {
+      @apply h-[90vh];
+   }
+}
+.SectionWaves span.headline {
+   @apply font-light tracking-[1px] leading-[normal] text-[2.5rem];
+   font-family: 'Lato', 'Helvitica', 'sans-serif';
+}
+@media (max-width: 768px) {
+   .SectionWaves span.headline {
+      @apply text-[2rem];
+   }
+}
+.SectionWaves span.subtitle {
+   @apply font-light tracking-[2px] leading-[normal] text-[34px] normal-case m-auto;
+   font-family: 'Lato', 'Helvitica', 'sans-serif';
+}
+@media (max-width: 768px) {
+   .SectionWaves span.subtitle {
+      @apply text-[28px] mx-4 my-0;
+   }
+}
+.SectionWaves span ul {
+   @apply text-left list-none;
+   list-style: none;
+}
+.SectionWaves p {
+   @apply tracking-[1px] text-sm text-[#333];
+   font-family: 'Lato', 'Helvitica', 'sans-serif';
+}
+.SectionWaves .header {
+   @apply relative text-center bg-[linear-gradient(60deg,rgba(84,58,183,0.9)_0%,rgba(0,172,193,0.9)_100%),url("../../../images/annie-marek-barta-hKNVVGNba68-unsplash.jpg")] bg-[0%_30%] text-[white];
+   /*background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+   */
+}
+@media screen and (max-width: 980px) {
+   .SectionWaves .header {
+      @apply bg-[0%_100%];
+   }
+}
+@media screen and (max-width: 480px) {
+   .SectionWaves .header {
+      @apply bg-[54%_35%];
+   }
+}
+.SectionWaves .logo {
+   @apply w-[50px] fill-[white] inline-block align-middle pr-[15px];
+}
+.SectionWaves .inner-header {
+   @apply h-[80vh] w-full m-0 p-0;
+}
+@media (max-width: 768px) {
+   .SectionWaves .inner-header {
+      @apply h-[85vh];
+   }
+}
+.SectionWaves .flex {
+   @apply flex items-center justify-center text-center;
+   /*Flexbox for containers*/
+}
+.SectionWaves .waves {
+   @apply relative w-full h-[15vh] mb-[-7px] min-h-[100px] max-h-[150px];
+   /*Fix for safari gap*/
+}
+@media (max-width: 768px) {
+   .SectionWaves .waves {
+      @apply h-10 min-h-[40px];
+   }
+}
+.SectionWaves .content {
+   @apply relative h-[20vh] text-center bg-[white];
+}
+@media (max-width: 768px) {
+   .SectionWaves .content {
+      @apply h-[30vh];
+   }
+}
+.SectionWaves .parallax > use {
+   @apply animate-[move-forever_25s_cubic-bezier(0.55,0.5,0.45,0.5)_infinite];
+}
+.SectionWaves .parallax > use:nth-child(1) {
+   animation-delay: -2s;
+   animation-duration: 7s;
+}
+.SectionWaves .parallax > use:nth-child(2) {
+   animation-delay: -3s;
+   animation-duration: 10s;
+}
+.SectionWaves .parallax > use:nth-child(3) {
+   animation-delay: -4s;
+   animation-duration: 13s;
+}
+.SectionWaves .parallax > use:nth-child(4) {
+   animation-delay: -5s;
+   animation-duration: 20s;
+}
+@keyframes move-forever {
+   0% {
+      transform: translate3d(-90px, 0, 0);
+   }
+   100% {
+      transform: translate3d(85px, 0, 0);
+   }
+}
+.SectionWaves a {
+   @apply transition-[0.3s] duration-[all] ease-[ease-in-out] hover:transition-[0.3s] hover:duration-[all] hover:ease-[ease-in-out];
+   -webkit-transition: 0.3s all ease-in-out;
+   -o-transition: 0.3s all ease-in-out;
+}
+.SectionWaves a:hover {
+   -webkit-transition: 0.3s all ease-in-out;
+   -o-transition: 0.3s all ease-in-out;
+}
+.SectionWaves a#work {
+   @apply text-[#217ebd] bg-[white] no-underline hover:text-[white] hover:bg-[#217ebd] hover:no-underline hover:shadow-[5px_5px_17px_white];
+}
+/*Shrinking for mobile* / @media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+   }
+    .content {
+        height: 30vh;
+   }
+    h1 {
+        font-size: 24px;
+   }
+}
+*/

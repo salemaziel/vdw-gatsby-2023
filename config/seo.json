@@ -1,0 +1,56 @@
+{
+  "pathPrefix": "/",
+  "title": "Via Del Web Website Design+Development & Digital Marketing",
+  "titleAlt": "Via Del Web Website Design & Digital Marketing",
+  "description": "Latino Owned Web Design, Web Development, & Digital Marketing Agency based in San Diego, CA specializing in working with small businesses.",
+  "url": "https://viadelweb.com",
+  "siteUrl": "https://viadelweb.com/",
+  "siteLanguage": "en",
+  "lang": "en",
+  "logo": "/logo/logo.png",
+  "banner": "/logo/banner.png",
+  "favicon": "/logo/favicon.png",
+  "shortName": "Via Del Web",
+  "author": "Salem Aziel",
+  "themeColor": "#217ebd",
+  "backgroundColor": "#217ebd",
+  "twitter": "@viadelweb",
+  "siteTitle": "Via Del Web Website Design & Digital Marketing",
+  "manifestName": "Via Del Web Website Design & Digital Marketing",
+  "manifestShortName": "Via Del Web",
+  "manifestStartUrl": "/",
+  "manifestBackgroundColor": "#000",
+  "manifestThemeColor": "#fff",
+  "manifestDisplay": "minimal-ui",
+  "manifestIcon": "/logo/favicon.png",
+  "keyword": "website design, digital marketing, automation, consulting, software development, web development, web design, digital business, digital transformation, digital strategy, digital marketing strategy, digital marketing agency, digital marketing services, digital marketing company, digital marketing consultant",
+  "authorName": "Salem Aziel",
+  "heading": "Web Development, Web Design, Digital Marketing",
+  "socialLinks": [
+    {
+      "icon": "fa-instagram",
+      "name": "Instagram",
+      "url": "https://instagram.com/viadelweb"
+    },
+    {
+      "icon": "fa-facebook",
+      "name": "Facebook",
+      "url": "https://facebook.com/viadelweb"
+    },
+    {
+      "icon": "fa-twitter",
+      "name": "Twitter",
+      "url": "https://twitter.com/"
+    },
+    {
+      "icon": "fa-linkedin",
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/viadelweb"
+    },
+    {
+      "icon": "fa-envelope-o",
+      "name": "Email",
+      "url": "mailto:contact@viadelweb.com"
+    }
+  ]
+}

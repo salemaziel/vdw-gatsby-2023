@@ -1,0 +1,27 @@
+.SectionHeader:not(:last-child) {
+    @apply mb-8;
+}
+.SectionHeader__subtitle {
+    @apply max-w-full inline-block text-left;
+}
+.SectionHeader__description {
+  @apply text-black font-[bold] block;
+}
+.SectionHeader__description p {
+  @apply mb-4 text-black inline-block;
+}
+
+.SectionHeader__descriptions {
+  @apply block;
+  /*color: white;
+   font-weight: bold;*/
+}
+.SectionHeader__listitem {
+  @apply text-center [list-style:none] mx-auto my-4;
+}
+.SectionHeader__listitem__title {
+  @apply font-[bold] text-center [list-style:none];
+}
+.SectionHeader2 ul {
+  @apply p-0;
+}

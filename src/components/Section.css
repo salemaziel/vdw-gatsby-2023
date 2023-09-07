@@ -1,0 +1,7 @@
+.SectionComponent .container {
+ @apply relative;
+}
+.bg-white + .SectionComponent.bg-white {
+ /*border-top: 1px solid #F0F0F0;
+ */
+}

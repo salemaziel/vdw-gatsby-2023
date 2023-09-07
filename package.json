@@ -1,0 +1,64 @@
+{
+  "name": "via-del-web",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Salem Aziel <salem@viadelweb.com>",
+  "dependencies": {
+    "@fontsource-variable/montserrat": "^5.0.9",
+    "@fontsource-variable/rasa": "^5.0.9",
+    "@fontsource/lato": "^5.0.9",
+    "@fontsource/merriweather": "^5.0.8",
+    "clsx": "^2.0.0",
+    "gatsby": "^5.12.3",
+    "gatsby-plugin-brotli": "^2.1.0",
+    "gatsby-plugin-dark-mode": "^1.1.2",
+    "gatsby-plugin-image": "^3.12.0",
+    "gatsby-plugin-manifest": "^5.12.0",
+    "gatsby-plugin-preload-fonts": "^4.12.0",
+    "gatsby-plugin-root-import": "^2.0.9",
+    "gatsby-plugin-sharp": "^5.12.0",
+    "gatsby-source-filesystem": "^5.12.0",
+    "gatsby-transformer-sharp": "^5.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.15",
+    "gatsby-plugin-postcss": "^6.12.0",
+    "postcss": "^8.4.28",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "prettier": "^3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "tailwind-bootstrap-grid": "^5.0.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "volta": {
+    "node": "18.17.1",
+    "yarn": "3.6.1",
+    "npm": "9.6.7"
+  }
+}

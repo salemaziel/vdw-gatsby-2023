@@ -1,0 +1,31 @@
+.BannerSection {
+   @apply min-w-full w-[100vh] bg-[linear-gradient(60deg,#543ab7_0%,#00acc1_100%)] bg-[bottom_center] bg-cover bg-no-repeat bg-fixed relative h-[25vh] m-0;
+   /*min-height: 30rem;
+   */
+   /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 33%, rgba(0, 0, 0, 0.45) 66%, rgba(0, 0, 0, 0.25) 100%), url('');
+   */
+   /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 33%, rgba(0, 0, 0, 0.45) 66%, rgba(0, 0, 0, 0.25) 100%), var(--image);
+   */
+}
+@media screen and (max-width: 980px) {
+   .BannerSection {
+      @apply w-full min-w-full bg-[linear-gradient(60deg,#543ab7_0%,#00acc1_100%)] bg-[70%_20%] bg-cover bg-no-repeat bg-local mt-0 mb-4 mx-0 pt-8 pb-0 px-0;
+      /*min-height: 25rem;
+       */
+      /*background-image: linear-gradient(to bottom, rgba(0, 132, 196, 0.55) 33%, rgba(0, 132, 196, 0.45) 66%, rgba(0, 132, 196, 0.25) 100%), url('');
+       */
+      /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 33%, rgba(0, 0, 0, 0.45) 66%, rgba(0, 0, 0, 0.25) 100%), var(--image);
+       */
+   }
+}
+@media screen and (max-width: 480px) {
+   .BannerSection {
+      @apply w-full min-w-full bg-[linear-gradient(60deg,#543ab7_0%,#00acc1_100%)] bg-[50%_20%] bg-cover bg-no-repeat bg-scroll h-[20vh] mx-auto my-0 pt-8 pb-0 px-0;
+      /*min-height: 20rem;
+       */
+      /*background-image: linear-gradient(to bottom, rgba(0, 132, 196, 0.55) 33%, rgba(0, 132, 196, 0.45) 66%, rgba(0, 132, 196, 0.25) 100%), url('');
+       */
+      /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 33%, rgba(0, 0, 0, 0.45) 66%, rgba(0, 0, 0, 0.25) 100%), var(--image);
+       */
+   }
+}

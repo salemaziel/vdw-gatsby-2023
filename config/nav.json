@@ -1,0 +1,27 @@
+{
+  "nav": [
+    {
+      "name": "About",
+      "permalink": "/about/"
+    },
+    {
+      "name": "Blog",
+      "permalink": "https://viadelweb.cloud/"
+    },
+    {
+      "name": "Resources",
+      "permalink": "/resources/"
+    },
+    {
+      "name": "Services",
+      "permalink": "/services/",
+      "children": []
+    }
+  ],
+  "navbutton": [
+    {
+      "name": "Get In Touch",
+      "permalink": "#"
+    }
+  ]
+}

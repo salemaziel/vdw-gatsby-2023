@@ -1,0 +1,6 @@
+.BackgroundImage {
+    @apply bg-[image:var(--image)] opacity-[var(--opacity)] bg-[center_center] bg-cover absolute z-0 inset-0;
+}
+.BackgroundImage.repeat {
+    @apply bg-auto bg-[0%_0%] [background-repeat:true];
+}
