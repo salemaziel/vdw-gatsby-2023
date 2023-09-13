@@ -7,7 +7,7 @@ import Buttons from '@/components/UI/Buttons';
 function HomeHero({ title, subtitle, lbutton, rbutton, data }) {
     const isCentered = data?.variant === 'centered'
     return (
-        <section className="SectionWaves">
+        <section className="SectionWaves dark:text-[rgba(26,26,57,1)]">
         <div /*className="header bg-[linear-gradient(60deg,rgba(84, 58, 183, 0.9) 0%, rgba(0, 172, 193, 0.9) 100%), url('../../../images/annie-marek-barta-hKNVVGNba68-unsplash.jpg');] dark: dark:bg-black"*/ className="header bg-hero-background dark:bg-hero-background-dark">
           <div className="flex inner-header">
             {/*<h1>Simple CSS Waves</h1>*/}
@@ -49,7 +49,7 @@ function HomeHero({ title, subtitle, lbutton, rbutton, data }) {
           {/*Waves Container*/}
           <div>
             <svg
-              className="waves"
+              className="waves dark:text-[rgba(26,26,57,1)]"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               viewBox="0 24 150 28"
@@ -68,20 +68,23 @@ function HomeHero({ title, subtitle, lbutton, rbutton, data }) {
                   x={48}
                   y={0}
                   fill="rgba(255,255,255,0.7"
+                  className='dark:text-[rgba(26,26,57,1)] dark:fill-[#8585ad] dark:stroke-[#8585ad] dark:opacity-70'
                 />
                 <use
                   xlinkHref="#gentle-wave"
                   x={48}
                   y={3}
                   fill="rgba(255,255,255,0.5)"
+                  className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)] dark:opacity-50'
                 />
                 <use
                   xlinkHref="#gentle-wave"
                   x={48}
                   y={5}
                   fill="rgba(255,255,255,0.3)"
+                  className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)] dark:opacity-30'
                 />
-                <use xlinkHref="#gentle-wave" x={48} y={7} fill="#fff" />
+                <use xlinkHref="#gentle-wave" x={48} y={7} fill="#fff" className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)]' />
               </g>
             </svg>
           </div>

@@ -73,8 +73,12 @@ body {
   @apply text-[length:var(--fontSize-1)] text-[color:var(--color-text)];
   font-family: var(--font-body);
 }
-footer {
+/*footer {
   @apply pt-[var(--spacing-6)] pr-[var(--spacing-0)] pb-[var(--spacing-6)] pl-[var(--spacing-0)];
+}
+*/
+footer {
+  @apply pt-[var(--spacing-6)] pr-[var(--spacing-0)] pl-[var(--spacing-0)];
 }
 hr {
   @apply h-px border-0;
