@@ -62,7 +62,7 @@ const S3Services = props => {
             />
           </div>
           <div className="flex items-center justify-end w-full mx-auto mb-12 lg:w-1/2">
-            <div className="flex flex-col items-center justify-center w-full h-full p-8 bg-white dark:bg-gray-800 lg:p-8">
+            <div className="flex flex-col items-center justify-center w-full h-full p-8 lg:p-8">
               <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
               Web Design & Development
               </h3>
@@ -76,7 +76,7 @@ const S3Services = props => {
       <Container className="py-6 my-6">
         <div className="flex flex-row items-center w-full mx-auto mb-12 lg:w-5/6">
         <div className="flex items-center justify-end w-full mx-auto mb-12 lg:w-1/2">
-            <div className="flex flex-col items-center justify-center w-full h-full p-8 bg-white dark:bg-gray-800 lg:p-8">
+            <div className="flex flex-col items-center justify-center w-full h-full p-8 lg:p-8">
               <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
               Custom eCommerce Solutions for your online store.
               </h3>
@@ -114,7 +114,7 @@ const S3Services = props => {
             />
           </div>
           <div className="flex items-center justify-end w-full mx-auto mb-12 lg:w-1/2">
-            <div className="flex flex-col items-center justify-center w-full h-full p-8 bg-white dark:bg-gray-800 lg:p-8">
+            <div className="flex flex-col items-center justify-center w-full h-full p-8 lg:p-8">
               <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
               E-Commerce websites built to scale using your favorite platform.
               </h3>
@@ -144,7 +144,7 @@ const S3Services = props => {
       <Container className="py-6 my-6">
         <div className="flex flex-row items-center w-full mx-auto mb-12 lg:w-5/6">
         <div className="flex items-center justify-end w-full mx-auto mb-12 lg:w-1/2">
-            <div className="flex flex-col items-center justify-center w-full h-full p-8 bg-white dark:bg-gray-800 lg:p-8">
+            <div className="flex flex-col items-center justify-center w-full h-full p-8 lg:p-8">
               <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
               Email Marketing for E-Commerce
               </h3>
@@ -182,7 +182,7 @@ const S3Services = props => {
             />
           </div>
           <div className="flex items-center justify-end w-full mx-auto mb-12 lg:w-1/2">
-            <div className="flex flex-col items-center justify-center w-full h-full p-8 bg-white dark:bg-gray-800 lg:p-8">
+            <div className="flex flex-col items-center justify-center w-full h-full p-8 lg:p-8">
               <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
               E-Commerce Automation & SEO Optimization
               </h3>
@@ -196,7 +196,7 @@ const S3Services = props => {
       <Container className="py-6 my-6">
         <div className="flex flex-row items-center w-full mx-auto mb-12 lg:w-5/6">
         <div className="flex items-center justify-end w-full mx-auto mb-12 lg:w-1/2">
-            <div className="flex flex-col items-center justify-center w-full h-full p-8 bg-white dark:bg-gray-800 lg:p-8">
+            <div className="flex flex-col items-center justify-center w-full h-full p-8 lg:p-8">
               <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
               Video Marketing AI for Youtube
               </h3>
@@ -234,7 +234,7 @@ const S3Services = props => {
             />
           </div>
           <div className="flex items-center justify-end w-full mx-auto mb-12 lg:w-1/2">
-            <div className="flex flex-col items-center justify-center w-full h-full p-8 bg-white dark:bg-gray-800 lg:p-8">
+            <div className="flex flex-col items-center justify-center w-full h-full p-8 lg:p-8">
               <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
               Wix and Squarespace Website Design and Development
               </h3>
@@ -248,7 +248,7 @@ const S3Services = props => {
       <Container className="py-6 my-6">
         <div className="flex flex-row items-center w-full mx-auto mb-12 lg:w-5/6">
         <div className="flex items-center justify-end w-full mx-auto mb-12 lg:w-1/2">
-            <div className="flex flex-col items-center justify-center w-full h-full p-8 bg-white dark:bg-gray-800 lg:p-8">
+            <div className="flex flex-col items-center justify-center w-full h-full p-8 lg:p-8">
               <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
               Email Marketing for E-Commerce
               </h3>
