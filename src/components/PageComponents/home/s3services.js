@@ -91,11 +91,12 @@ const S3Services = props => {
               className=""
               layout="fixed"
               formats={["auto", "webp", "avif"]}
-              src="../../../images/web-design.png"
+              src="../../../images/ecommerce-500x.png"
               width={500}
-              height={300}
+              height={500}
               quality={95}
-              alt=""
+              alt="DALL·E 2023-11-22 15.21.11 - An image symbolizing eCommerce solutions. Visualize a digital shopping cart filled with various products and a computer screen showing an online store"
+              loading="lazy"
             />
           </div>
         </div>
@@ -112,6 +113,7 @@ const S3Services = props => {
               height={300}
               quality={95}
               alt=""
+              loading="lazy"
             />
           </div>
           <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
@@ -159,11 +161,12 @@ const S3Services = props => {
               className=""
               layout="fixed"
               formats={["auto", "webp", "avif"]}
-              src="../../../images/web-design.png"
+              src="../../../images/ecommerce-email-marketing-500x.png"
               width={500}
-              height={300}
+              height={400}
               quality={95}
-              alt=""
+              alt="DALL·E 2023-11-22 15.53.57 - An image representing email marketing services. The scene includes a laptop with an open email client, showcasing an attractive email template."
+              loading="lazy"
             />
           </div>
         </div>
@@ -175,11 +178,12 @@ const S3Services = props => {
               className=""
               layout="fixed"
               formats={["auto", "webp", "avif"]}
-              src="../../../images/web-design.png"
+              src="../../../images/ecommerce-seo-optimization-500x.png"
               width={500}
-              height={300}
+              height={400}
               quality={95}
-              alt=""
+              alt="DALL·E 2023-11-22 15.21.00 - An image illustrating SEO optimization services. Feature a magnifying glass focusing on a webpage with keywords highlighted. Include elements like sea"
+              loading="lazy"
             />
           </div>
           <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
@@ -211,16 +215,17 @@ const S3Services = props => {
               className=""
               layout="fixed"
               formats={["auto", "webp", "avif"]}
-              src="../../../images/web-design.png"
+              src="../../../images/video-marketing-500x.png"
               width={500}
-              height={300}
+              height={400}
               quality={95}
-              alt=""
+              alt="DALL·E 2023-11-22 15.20.38 - An image depicting video marketing services. The scene shows a camera filming a product with a computer screen in the background displaying video edit."
+              loading="lazy"
             />
           </div>
         </div>
       </Container>
-      <Container className="py-6 my-6">
+      {/*<Container className="py-6 my-6">
         <div className="flex flex-col items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
         <div className="flex items-center justify-start w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
             <StaticImage
@@ -271,7 +276,7 @@ const S3Services = props => {
             />
           </div>
         </div>
-      </Container>
+  </Container>*/}
       </Section>
     </>
   )
