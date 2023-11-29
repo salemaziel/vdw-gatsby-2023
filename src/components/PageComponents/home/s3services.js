@@ -30,7 +30,7 @@ const S3Services = props => {
         className={className}
       >
         <Container className="container flex flex-col items-center justify-center px-8 py-0 mx-auto text-center align-middle">
-          <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
+          <h3 className="py-2 mb-6 text-3xl font-medium text-center sm:py-6 dark:text-white">
             {title}
           </h3>
           <p className="px-0 py-6 pb-4 mx-auto text-lg text-left md:px-4 sm:px-16 dark:text-white">
@@ -47,9 +47,10 @@ const S3Services = props => {
         bgImageRepeat={bgImageRepeat}
         className={className}
       >
-      <Container className="py-6 my-6">
+      {/* First Row */}
+      <Container className="pb-12 my-6 sm:py-6">
         <div className="flex flex-col items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
-        <div className="flex items-center justify-start w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+        <div className="flex items-center justify-start order-2 w-full mx-auto mb-4 sm:order-1 sm:mb-12 lg:w-1/2">
             <StaticImage
               className=""
               layout="fixed"
@@ -62,9 +63,9 @@ const S3Services = props => {
               loading="eager"
             />
           </div>
-          <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+          <div className="flex items-center justify-end order-1 w-full mx-auto mb-4 sm:order-2 sm:mb-12 lg:w-1/2">
             <div className="flex flex-col items-center justify-center w-full h-full px-2 py-8 lg:p-8">
-              <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
+              <h3 className="py-2 mb-6 text-3xl font-medium text-center sm:py-6 dark:text-white">
               Web Design & Development
               </h3>
               <p className="px-0 py-6 pb-4 mx-auto text-lg text-left md:px-4 dark:text-white">
@@ -74,11 +75,12 @@ const S3Services = props => {
           </div>
         </div>
       </Container>
-      <Container className="py-6 my-6">
-        <div className="flex flex-col items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
-        <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+      {/* Second Row */}
+      <Container className="py-12 my-6 sm:py-6">
+        <div className="flex flex-col-reverse items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
+        <div className="flex items-center justify-end order-2 w-full mx-auto mb-4 sm:order-1 sm:mb-12 lg:w-1/2">
             <div className="flex flex-col items-center justify-center w-full h-full px-2 py-8 lg:p-8">
-              <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
+              <h3 className="py-2 mb-6 text-3xl font-medium text-center sm:py-6 dark:text-white">
               Custom eCommerce Solutions for your online store.
               </h3>
               <p className="px-0 py-6 pb-4 mx-auto text-lg text-left md:px-4 dark:text-white">
@@ -86,7 +88,7 @@ const S3Services = props => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+          <div className="flex items-center justify-end order-1 w-full mx-auto mb-4 sm:order-2 sm:mb-12 lg:w-1/2">
             <StaticImage
               className=""
               layout="fixed"
@@ -101,9 +103,10 @@ const S3Services = props => {
           </div>
         </div>
       </Container>
-      <Container className="py-6 my-6">
+      {/* Third Row */}
+      <Container className="py-12 my-6 sm:py-6">
         <div className="flex flex-col items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
-        <div className="flex items-center justify-start w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+        <div className="flex items-center justify-start order-2 w-full mx-auto mb-4 sm:order-1 sm:mb-12 lg:w-1/2">
             <StaticImage
               className=""
               layout="fixed"
@@ -116,9 +119,9 @@ const S3Services = props => {
               loading="lazy"
             />
           </div>
-          <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+          <div className="flex items-center justify-end order-1 w-full mx-auto mb-4 sm:order-2 sm:mb-12 lg:w-1/2">
             <div className="flex flex-col items-center justify-center w-full h-full px-2 py-8 lg:p-8">
-              <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
+              <h3 className="py-2 mb-6 text-3xl font-medium text-center sm:py-6 dark:text-white">
               E-Commerce websites built to scale using your favorite platform.
               </h3>
               <p className="px-0 py-6 pb-4 mx-auto text-lg text-left md:px-4 dark:text-white">
@@ -144,11 +147,12 @@ const S3Services = props => {
           </div>
         </div>
       </Container>
-      <Container className="py-6 my-6">
-        <div className="flex flex-col items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
-        <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+      {/* Fourth Row */}
+      <Container className="py-12 my-6 sm:py-6">
+        <div className="flex flex-col-reverse items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
+        <div className="flex items-center justify-end order-2 w-full mx-auto mb-4 sm:order-1 sm:mb-12 lg:w-1/2">
             <div className="flex flex-col items-center justify-center w-full h-full px-2 py-8 lg:p-8">
-              <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
+              <h3 className="py-2 mb-6 text-3xl font-medium text-center sm:py-6 dark:text-white">
               Email Marketing for E-Commerce
               </h3>
               <p className="px-0 py-6 pb-4 mx-auto text-lg text-left md:px-4 dark:text-white">
@@ -156,7 +160,7 @@ const S3Services = props => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+          <div className="flex items-center justify-end order-1 w-full mx-auto mb-4 sm:order-2 sm:mb-12 lg:w-1/2">
             <StaticImage
               className=""
               layout="fixed"
@@ -171,9 +175,10 @@ const S3Services = props => {
           </div>
         </div>
       </Container>
-      <Container className="py-6 my-6">
+      {/* Fifth Row */}
+      <Container className="py-12 my-6 sm:py-6">
         <div className="flex flex-col items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
-        <div className="flex items-center justify-start w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+        <div className="flex items-center justify-start order-2 w-full mx-auto mb-4 sm:order-1 sm:mb-12 lg:w-1/2">
             <StaticImage
               className=""
               layout="fixed"
@@ -186,9 +191,9 @@ const S3Services = props => {
               loading="lazy"
             />
           </div>
-          <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+          <div className="flex items-center justify-end order-1 w-full mx-auto mb-4 sm:order-2 sm:mb-12 lg:w-1/2">
             <div className="flex flex-col items-center justify-center w-full h-full px-2 py-8 lg:p-8">
-              <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
+              <h3 className="py-2 mb-6 text-3xl font-medium text-center sm:py-6 dark:text-white">
               E-Commerce Automation & SEO Optimization
               </h3>
               <p className="px-0 py-6 pb-4 mx-auto text-lg text-left md:px-4 dark:text-white">
@@ -198,11 +203,12 @@ const S3Services = props => {
           </div>
         </div>
       </Container>
-      <Container className="py-6 my-6">
-        <div className="flex flex-col items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
-        <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+      {/* Sixth Row */}
+      <Container className="py-12 my-6 sm:py-6">
+        <div className="flex flex-col-reverse items-center w-full mx-auto mb-4 sm:mb-12 sm:flex-row lg:w-5/6">
+        <div className="flex items-center justify-end order-2 w-full mx-auto mb-4 sm:order-1 sm:mb-12 lg:w-1/2">
             <div className="flex flex-col items-center justify-center w-full h-full px-2 py-8 lg:p-8">
-              <h3 className="py-6 mb-6 text-3xl font-medium text-center dark:text-white">
+              <h3 className="py-2 mb-6 text-3xl font-medium text-center sm:py-6 dark:text-white">
               Video Marketing AI for Youtube
               </h3>
               <p className="px-4 py-6 pb-4 mx-auto text-lg text-left dark:text-white">
@@ -210,7 +216,7 @@ const S3Services = props => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-end w-full mx-auto mb-4 sm:mb-12 lg:w-1/2">
+          <div className="flex items-center justify-end order-1 w-full mx-auto mb-4 sm:order-2 sm:mb-12 lg:w-1/2">
             <StaticImage
               className=""
               layout="fixed"

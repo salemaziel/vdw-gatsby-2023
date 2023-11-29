@@ -26,7 +26,7 @@ function FooterMultiColumn(props) {
     >
       <Container>
         <div className="row">
-          <div /*xs={12} md={4}*/ className="col-12 md:col-4">
+          <div className="col-12 md:col-4">
             <Link to="/">
               <div>
                 <img
@@ -48,11 +48,11 @@ function FooterMultiColumn(props) {
               <p className="FooterMultiColumn__copyright">{props.copyright}</p>
             )}
           </div>
-          <div /*xs={12} md={8} lg={{ span: 6, offset: 2 }}*/ className="col-12 md:col-8">
+          <div  className="col-12 md:col-8">
             <div className="FooterMultiColumn__menus">
               <div className="row">
 
-                <div /*xs={7} md={6}*/ className="mt-3 col-7 md:col-6 md:mt-0">
+                <div className="mt-3 col-7 md:col-6 md:mt-0">
                   <h5>Menu</h5>
                   <ul className="list-unstyled">
                     <li>
@@ -76,7 +76,7 @@ function FooterMultiColumn(props) {
 
                   </ul>
                 </div>
-                <div /*xs={5} md={6}*/ className="px-0 mt-3 col-5 md: col-6 md:mt-0">
+                <div className="px-0 mt-3 col-5 md:col-6 md:mt-0">
                   <h5>Social</h5>
                   <ul className="list-unstyled">
                     <li>
