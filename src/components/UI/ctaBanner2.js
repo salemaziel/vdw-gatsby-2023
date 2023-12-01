@@ -1,7 +1,7 @@
 import React from "react"
 //import Section from "../Section"
 import { Link } from "gatsby"
-import FormModal from "./formModal"
+//import FormModal from "./formModal"
 
 const CtaBanner2 = ({title, description, buttonText, url}) => {
   return (

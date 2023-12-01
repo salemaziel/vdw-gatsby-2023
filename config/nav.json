@@ -9,6 +9,10 @@
       "permalink": "https://viadelweb.cloud/"
     },
     {
+      "name": "Contact",
+      "permalink": "/contact"
+    },
+    {
       "name": "Resources",
       "permalink": "/resources/"
     },
@@ -21,7 +25,7 @@
   "navbutton": [
     {
       "name": "Get In Touch",
-      "permalink": "#"
+      "permalink": "/contact"
     }
   ]
 }

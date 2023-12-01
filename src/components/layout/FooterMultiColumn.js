@@ -7,12 +7,16 @@ import { Link } from "gatsby";
 //import "./FooterMultiColumn.scss";
 import "./FooterMultiColumn.css"
 
+import { StaticImage } from "gatsby-plugin-image"
+
 import Container from '@/components/UI/Container'
 
 import FBSVG from "@/images/icon-facebook.svg"
 import TwitterSVG from "@/images/icon-twitter.svg"
 import IGSVG from "@/images/icon-instagram.svg"
 import LinkedIn from "@/images/icon-linkedin.svg"
+
+//import Logo2 from "../../images/logo-horiz-white2.png /images/logo-horiz-white2.png"
 
 function FooterMultiColumn(props) {
   return (
@@ -29,12 +33,27 @@ function FooterMultiColumn(props) {
           <div className="col-12 md:col-4">
             <Link to="/">
               <div>
-                <img
+                {/*<img
                   className="FooterMultiColumn__logo"
                   src={props.logo}
                   alt="Logo"
                   loading="lazy"
-                />
+                />*/}
+
+<StaticImage
+              
+              layout="constrained"
+              formats={["auto", "webp", "avif"]}
+              src="../../images/logo-horiz-white2.png"
+              width={200}
+              quality={95}
+              alt="Via Del Web Logo"
+              loading="lazy"
+              placeholder="blurred"
+            />
+            
+
+
               </div>
             </Link>
 

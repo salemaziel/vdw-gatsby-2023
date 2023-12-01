@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 //import Bio from "../components/bio"
 import Layout from "../components/layout/layout"
@@ -38,7 +38,7 @@ const Index = ({ data, location }) => {
         bg="white"
         textColor="dark"
         size="md"
-        className="dark:bg-[rgba(26,26,57,1)] dark:text-white !py-8 lg:!py-16"
+        className="dark:bg-[rgba(26,26,57,1)] dark:text-white !pt-8 lg:!pt-16 !pb-0"
         title="Our Services"
         subtitle="We offer a wide range of services to help you grow your business online."
       />

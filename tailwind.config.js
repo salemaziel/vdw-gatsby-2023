@@ -1060,7 +1060,14 @@ module.exports = {
           900: "#183d62",
           950: "#102641",
     },
+    
   },
+    textColor: {
+      "regular-text": "#2e353f",
+      "regular-text-light": "#4f5969",
+      "heading-text": "#1a202c",
+      "vdw-blue": "#2579BC"
+    },
 },
   },
   corePlugins: {

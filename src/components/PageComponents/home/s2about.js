@@ -12,7 +12,7 @@ function S2about({title, subtitle, content, ...props}){
    bgImageOpacity, 
    bgImageRepeat, 
    className,
-   ...otherProps
+//   ...otherProps
   } = props;
 
   return (

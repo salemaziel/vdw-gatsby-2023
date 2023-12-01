@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 //import Bio from "../components/bio"
 import Layout from "../components/layout/layout"
@@ -10,7 +10,7 @@ import Seo from "../components/seo"
 import ServicesHero from "../components/PageComponents/services/ServicesHero"
 import S2Features from "../components/PageComponents/services/FeaturesSection2"
 import ContentSection from "../components/PageComponents/services/ContentSection"
-import CtaSection2 from "../components/UI/CtaSection2"
+//import CtaSection2 from "../components/UI/CtaSection2"
 
 import CtaBanner2 from "../components/UI/ctaBanner2"
 
@@ -30,7 +30,7 @@ const Services = ({ data, location }) => {
         subtitle="Let's build your Digital Real Estate."
         strapline=""
         size="md"
-        bgColor="bg-white"
+        bgColor=""
         bgImage=""
         bgImageOpacity={1}
         textColor=""
@@ -42,7 +42,7 @@ const Services = ({ data, location }) => {
         subtitle="Build user friendly and modern dashboards using the latest tech. Now is the time with a best selling UI framework."
         strapline="Created with passion"
         size="md"
-        bgColor="bg-white"
+        bgColor=""
         bgImage=""
         bgImageOpacity={1}
         textColor=""
@@ -52,21 +52,21 @@ const Services = ({ data, location }) => {
         subtitle=""
         strapline=""
         size="md"
-        bgColor="bg-white"
+        bgColor=""
         bgImage=""
         bgImageOpacity={1}
         textColor=""
       />
-      <CtaSection2
+      {/*<CtaSection2
         title="Ready? Let’s do it!"
         subtitle="Get your own custom dashboard and start building amazing services, always with the most solid and rock steady foundation."
         strapline=""
         size="lg"
-        bgColor="bg-white"
+        bgColor=""
         bgImage=""
         bgImageOpacity={1}
         textColor="text-white"
-      />
+      />*/}
 
 <CtaBanner2
       title="The fastest way from idea to live site. Period."

@@ -15,7 +15,7 @@ function HomeHero({ title, subtitle, lbutton, lbuttonlink, rbutton, rbuttonlink 
                                     </h1>
                                 ) : null}
                                 {subtitle ? (
-                                    <span className="max-w-2xl px-0 mx-auto mt-8 text-lg leading-relaxed tracking-wide text-center sm:text-3xl sm:px-4">{subtitle}</span>
+                                    <span className="max-w-2xl px-0 mx-auto mt-8 text-lg leading-relaxed tracking-wide text-center text-white sm:text-3xl sm:px-4">{subtitle}</span>
                                 ) : null}
                             </div>
                             <div className="flex flex-wrap justify-center py-4 md:mt-10">

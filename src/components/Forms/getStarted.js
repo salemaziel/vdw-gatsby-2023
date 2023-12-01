@@ -3,7 +3,7 @@ import React from "react"
 const GetStartedForm = props => {
   return (
     <form
-      name="estimateform"
+      name="getstartedform"
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
@@ -16,7 +16,7 @@ const GetStartedForm = props => {
       </h2>
       <div className="relative flex flex-col mb-3 md:flex-row">
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="estimateform" />
+        <input type="hidden" name="form-name" value="getstartedform" />
         <div className="w-full md:w-1/2 md:pr-1">
           <label
             htmlFor="firstName"

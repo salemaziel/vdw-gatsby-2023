@@ -109,7 +109,7 @@ function ContentSection(props) {
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
           {posts.map((post, index) => (
             <div
-              className="flex flex-col items-center overflow-hidden bg-white rounded-lg shadow-sm"
+              className="flex flex-col items-center overflow-hidden rounded-lg shadow-sm dark:bg-primary-800 dark:text-gray-100 "
               key={index}
             >
               <Link to={post.url} className="relative block group">
@@ -122,7 +122,7 @@ function ContentSection(props) {
                 <h4 className="mb-2 text-lg font-bold sm:text-xl">
                   <Link
                     to={post.url}
-                    className="leading-7 text-gray-800 hover:text-gray-600"
+                    className="leading-7 hover:text-gray-600 text-heading-text dark:text-white dark:hover:text-gray-200"
                   >
                     {post.title}
                   </Link>
@@ -138,7 +138,7 @@ function ContentSection(props) {
                   {post.readTime} read
                 </p>
           */}
-                <p className="prose">{post.description}</p>
+                <p className="prose text-regular-text dark:text-gray-200">{post.description}</p>
 
                 {post.tags && post.tags.length && (
                   <div className="mt-3 space-x-2">
