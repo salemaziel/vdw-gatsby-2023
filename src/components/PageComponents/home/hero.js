@@ -1,96 +1,92 @@
 import React from 'react';
 import Link from '@/resolvers/Link';
-import clsx from 'clsx';
-import { data } from 'autoprefixer';
-import Buttons from '@/components/UI/Buttons';
-
-function HomeHero({ title, subtitle, lbutton, rbutton, data }) {
-    const isCentered = data?.variant === 'centered'
+function HomeHero({ title, subtitle, lbutton, lbuttonlink, rbutton, rbuttonlink }) {
     return (
         <section className="SectionWaves dark:text-[rgba(26,26,57,1)]">
-        <div /*className="header bg-[linear-gradient(60deg,rgba(84, 58, 183, 0.9) 0%, rgba(0, 172, 193, 0.9) 100%), url('../../../images/annie-marek-barta-hKNVVGNba68-unsplash.jpg');] dark: dark:bg-black"*/ className="header bg-hero-background dark:bg-hero-background-dark">
-          <div className="flex inner-header">
-            {/*<h1>Simple CSS Waves</h1>*/}
-            <div className="container flex flex-col items-center justify-center px-3 py-24 mx-auto">
-              <div className="w-full text-center lg:pt-10 lg:mt-8 lg:w-2/3">
-                <div className="flex flex-col pt-20 pb-24 md:pb-20 lg:py-8">
-                {title && (
-                  <h1 className="mb-8 text-4xl font-light text-white title-font sm:text-6xl font-lato headline">
-                {title}    
-                  </h1>
-                )}
-                {subtitle && (
-                  <span className="max-w-2xl px-4 mt-8 text-xl leading-relaxed sm:text-3xl sm:px-4">{subtitle}</span>
-                )}
+            <div className="hero bg-hero-background dark:bg-hero-background-dark">
+                <div className="flex inner-hero">
+                    {/* Simple CSS Waves */}
+                    <div className="container flex flex-col items-center justify-center px-4 pt-32 pb-24 mx-auto md:py-24">
+                        <div className="w-full md:text-left lg:pt-10 lg:mt-8 lg:w-2/3">
+                            <div className="flex flex-col pt-24 pb-16 md:pb-20 lg:py-8">
+                                {title ? (
+                                    <h1 className="mb-8 text-4xl font-light leading-10 tracking-wide text-white title-font sm:text-6xl font-lato headline">
+                                        {title}
+                                    </h1>
+                                ) : null}
+                                {subtitle ? (
+                                    <span className="max-w-2xl px-0 mx-auto mt-8 text-lg leading-relaxed tracking-wide text-center sm:text-3xl sm:px-4">{subtitle}</span>
+                                ) : null}
+                            </div>
+                            <div className="flex flex-wrap justify-center py-4 md:mt-10">
+                                {lbutton ? (
+                                    <Link
+                                        to={lbuttonlink}
+                                        /*className="inline-block w-full px-4 py-3 mb-3 text-xl font-bold leading-loose text-white transition duration-200 hover:border hover:border-white rounded-xl sm:w-auto sm:mb-0 sm:mr-4"*/
+                                        className="bg-white hover:bg-[#2579bceb] hover:text-white inline-block w-full px-4 py-3 mb-3 text-xl font-bold leading-loose text-center text-[#2579bceb] transition-colors ease-in-out delay-0 duration-300 focus-within:outline outline-white focus:outline-white hover:shadow-lg  rounded-lg sm:w-auto sm:mb-0 sm:mr-4"
+                                    >
+                                        {lbutton}
+                                    </Link>
+                                ) : null}
+                                {rbutton ? (
+                                    <Link
+                                        to={rbuttonlink}
+                                        /*className="inline-block w-full px-4 py-3 mb-3 text-xl font-bold leading-loose text-blue-600 transition duration-200 bg-white rounded-xl sm:w-auto sm:mb-0 sm:ml-4"*/
+                                        
+                                        className="hover:bg-white bg-transparent text-white inline-block w-full px-4 py-3 mb-3 text-xl font-bold leading-loose text-center hover:text-[#2579bceb] transition-colors ease-in-out delay-0 duration-300 focus-within:outline outline-white focus:outline-white hover:shadow-lg  rounded-lg sm:w-auto sm:mb-0 sm:mr-4"
+                                    >
+                                        {rbutton}
+                                    </Link>
+                                ) : null}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex py-4 justify-evenly md:mt-10">
-              {lbutton && (
-                  <Link
-                    to="/about"
-                    className="px-4 py-3 text-white border-white d-inline-block rounded-2xl "
-                  >
-                    Learn More
-                  </Link>
-              )}
-              {rbutton && (
-                  <Link
-                    to="/contact"
-                    id="work"
-                    className="px-4 py-3 font-sans text-blue-600 bg-white rounded-lg d-inline-block"
-                  >
-                    Work with Us
-                  </Link>
-              )}
+
+                {/*Waves Container*/}
+                <div>
+                    <svg
+                        className="waves dark:text-[rgba(26,26,57,1)]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 24 150 28"
+                        preserveAspectRatio="none"
+                        shapeRendering="auto"
+                    >
+                        <defs>
+                            <path
+                                id="gentle-wave"
+                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                            />
+                        </defs>
+                        <g className="parallax">
+                            <use
+                                xlinkHref="#gentle-wave"
+                                x={48}
+                                y={0}
+                                fill="rgba(255,255,255,0.7)"
+                                className='dark:text-[rgba(26,26,57,1)] dark:fill-[#8585ad] dark:stroke-[#8585ad] dark:opacity-70'
+                            />
+                            <use
+                                xlinkHref="#gentle-wave"
+                                x={48}
+                                y={3}
+                                fill="rgba(255,255,255,0.5)"
+                                className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)] dark:opacity-50'
+                            />
+                            <use
+                                xlinkHref="#gentle-wave"
+                                x={48}
+                                y={5}
+                                fill="rgba(255,255,255,0.3)"
+                                className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)] dark:opacity-30'
+                            />
+                            <use xlinkHref="#gentle-wave" x={48} y={7} fill="#fff" className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)]' />
+                        </g>
+                    </svg>
                 </div>
-              </div>
             </div>
-          </div>
-  
-          {/*Waves Container*/}
-          <div>
-            <svg
-              className="waves dark:text-[rgba(26,26,57,1)]"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              viewBox="0 24 150 28"
-              preserveAspectRatio="none"
-              shapeRendering="auto"
-            >
-              <defs>
-                <path
-                  id="gentle-wave"
-                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                />
-              </defs>
-              <g className="parallax">
-                <use
-                  xlinkHref="#gentle-wave"
-                  x={48}
-                  y={0}
-                  fill="rgba(255,255,255,0.7"
-                  className='dark:text-[rgba(26,26,57,1)] dark:fill-[#8585ad] dark:stroke-[#8585ad] dark:opacity-70'
-                />
-                <use
-                  xlinkHref="#gentle-wave"
-                  x={48}
-                  y={3}
-                  fill="rgba(255,255,255,0.5)"
-                  className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)] dark:opacity-50'
-                />
-                <use
-                  xlinkHref="#gentle-wave"
-                  x={48}
-                  y={5}
-                  fill="rgba(255,255,255,0.3)"
-                  className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)] dark:opacity-30'
-                />
-                <use xlinkHref="#gentle-wave" x={48} y={7} fill="#fff" className='dark:text-[rgba(26,26,57,1)] dark:fill-[rgba(26,26,57,1)] dark:stroke-[rgba(26,26,57,1)]' />
-              </g>
-            </svg>
-          </div>
-        </div>
-      </section>
+        </section>
     );
 };
-
 export default HomeHero;

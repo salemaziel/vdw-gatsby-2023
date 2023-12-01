@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 import HomeHero from "../components/PageComponents/home/hero"
 import S2about from "../components/PageComponents/home/s2about"
 import S3services from "../components/PageComponents/home/s3services"
-import CtaBanner from "../components/UI/ctaBanner"
+//import CtaBanner from "../components/UI/ctaBanner"
 import CtaBanner2 from "../components/UI/ctaBanner2"
 //import Banner from "../components/UI/banner"
 

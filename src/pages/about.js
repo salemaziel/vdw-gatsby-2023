@@ -4,8 +4,12 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 
-import Banner from "../components/UI/banner"
-import SectionIntro from "../components/PageComponents/about/s1Intro"
+//import Banner from "../components/UI/banner"
+//import SectionIntro from "../components/PageComponents/about/s1Intro"
+
+import ServicesHero from "../components/PageComponents/services/ServicesHero"
+import S2Features from "../components/PageComponents/services/FeaturesSection2"
+import CtaBanner2 from "../components/UI/ctaBanner2"
 
 const About = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -13,8 +17,36 @@ const About = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+
+<ServicesHero
+        title={
+          <>
+            We are <span className="font-light">Via Del Web</span>
+          </>
+        }
+        subtitle="Let's build your Digital Real Estate."
+        strapline=""
+        size="md"
+        bgColor=""
+        bgImage=""
+        bgImageOpacity={1}
+        textColor=""
+      />
+
+
+      <S2Features
+        title="The best tech under the hood"
+        subtitle="Build user friendly and modern dashboards using the latest tech. Now is the time with a best selling UI framework."
+        strapline="Created with passion"
+        size="md"
+        bgColor=""
+        bgImage=""
+        bgImageOpacity={1}
+        textColor=""
+      />
+
       
-      <SectionIntro
+      {/*<SectionIntro
         bg=""
         textColor="dark"
         size="sm"
@@ -29,7 +61,16 @@ const About = ({ data, location }) => {
           <p className="mb-4">We strive to provide effective marketing strategies to companies that range in a variety of size and industry. Regardless of your business, there's always room for marketing services. Allow us to surge the presence of your brand through web design, SEO, and ad campaigns. We offer proven digital marketing solutions, and we'll continue to do so, so get started today!</p>
 </>
         )}
-      />
+      />*/}
+
+
+
+<CtaBanner2
+      title="The fastest way from idea to live site. Period."
+      description="We'll take care of everything, from design to deployment, so you can focus on your business."
+      buttonText="Get Started"
+      url="/contact"
+       />
 
     </Layout>
   )
