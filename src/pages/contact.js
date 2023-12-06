@@ -15,12 +15,12 @@ const Contact = ({ data, location }) => {
       >
       <Container>
         <div
-          className="flex flex-wrap px-10 py-0 mx-auto my-0 leading-9"
+          className="flex flex-wrap py-0 mx-auto my-0 leading-9 md:px-6"
           
         >
-          <div className="w-full pl-6 text-left lg:w-3/4">
+          <div className="w-full text-left sm:pl-6 sm:w-3/4">
             <header
-              className="inline-block w-1/3 h-px mx-0 mt-0 mb-12 sm:mb-16"
+              className="inline-block w-full h-px mx-0 mt-0 mb-12 sm:w-1/3 sm:mb-16"
               /*style={{
                 content: '""',
                 backgroundImage:
@@ -32,7 +32,7 @@ const Contact = ({ data, location }) => {
               </h2>
             </header>
             <div className="dark:text-white text-regular-text">
-              <p className="p-0 m-0">
+              <p className="py-2">
                 Get in touch with us to start your project. We'll get back to you within 24 hours.
               </p>
               <br className />
@@ -56,7 +56,7 @@ const Contact = ({ data, location }) => {
                   value="ContactForm"
                 />
                 <div className="flex flex-wrap m-auto">
-                  <div className="w-11/12 mb-4">
+                  <div className="w-full mb-4 sm:w-11/12">
                     <label
                       style={{ display: "none" }}
                       htmlFor="name"
@@ -71,7 +71,7 @@ const Contact = ({ data, location }) => {
                       aria-label="Name"
                       placeholder="Name*"
                       required
-                      className="block overflow-visible py-0 px-4 m-0 w-full h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
+                      className="block overflow-visible py-0 px-4 m-0 w-full h-10 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -81,7 +81,7 @@ const Contact = ({ data, location }) => {
                   </div>
                 </div>
                 <div className="flex flex-wrap m-auto">
-                  <div className="w-11/12 mb-4">
+                  <div className="w-full mb-4 sm:w-11/12">
                     <label
                       htmlFor="email"
                       style={{ display: "none" }}
@@ -106,7 +106,7 @@ const Contact = ({ data, location }) => {
                   </div>
                 </div>
                 <div className="flex flex-wrap m-auto">
-                  <div className="w-11/12 mb-4">
+                  <div className="w-full mb-4 sm:w-11/12">
                     <label
                       htmlFor="tel"
                       style={{ display: "none" }}
@@ -130,7 +130,7 @@ const Contact = ({ data, location }) => {
                   </div>
                 </div>
                 <div className="flex flex-wrap m-auto">
-                  <div className="w-11/12 mb-4">
+                  <div className="w-full mb-4 sm:w-11/12">
                     <label
                       htmlFor="Current Website"
                       style={{ display: "none" }}
@@ -154,7 +154,7 @@ const Contact = ({ data, location }) => {
                   </div>
                 </div>
                 {/*<div className="flex flex-wrap m-auto">
-                  <div className="w-11/12 mb-4">
+                  <div className="w-full mb-4 sm:w-11/12">
                     <label
                       htmlFor="Industry"
                       style={{ display: "none" }}
@@ -178,7 +178,7 @@ const Contact = ({ data, location }) => {
                   </div>
                 </div>*/}
                 <div className="flex flex-wrap m-auto">
-                  <div className="w-11/12 mb-4">
+                  <div className="w-full mb-4 sm:w-11/12">
                     <label
                       htmlFor="textarea"
                       style={{ display: "none" }}
@@ -200,7 +200,7 @@ const Contact = ({ data, location }) => {
                     />
                   </div>
                 </div>
-                <div className="w-11/12 mb-4">
+                <div className="w-full mb-4 sm:w-11/12">
                   <ul
                     className="flex flex-col w-full p-0 my-0 mr-0 -ml-4 list-none cursor-default"
                     style={{ listStyle: "none" }}
@@ -231,15 +231,15 @@ const Contact = ({ data, location }) => {
               </form>
             </div>
           </div>
-          <div className="w-1/4 mx-auto my-0 text-left border-0 border-gray-200 border-solid">
+          <div className="w-full mx-auto my-0 text-left border-0 border-gray-200 border-solid sm:w-1/4">
             <section className="block text-zinc-600">
-              <h4 className="flex px-0 py-4 m-auto text-xs leading-normal tracking-widest text-center uppercase text-heading-text dark:text-white">
+              <h4 className="flex justify-center px-0 py-4 m-auto text-xs leading-normal tracking-widest text-center uppercase text-heading-text dark:text-white">
                 Email
               </h4>
-              <p className="flex px-0 py-4 m-auto text-center">
+              <p className="flex py-4 mx-auto text-center">
                 <a
-                  /*className="p-8 mb-1 text-xs font-bold leading-4 uppercase bg-blue-700 rounded cursor-pointer sm:mr-2 text-sky-600 outline-offset-2 hover:border-transparent hover:text-slate-400 focus:text-slate-400"*/
-                  className="hover:bg-primary-500 bg-[#2579bceb] text-white inline-block w-full px-4 py-3 mb-3 text-xl font-bold leading-loose text-center hover:text-gray-200 transition-colors ease-in-out delay-0 duration-300 focus-within:outline outline-white focus:outline-white hover:shadow-lg  rounded-lg sm:w-auto sm:mb-0 sm:mr-4"
+                  /*className="p-8 mb-1 text-xs font-bold leading-4 uppercase bg-blue-700 rounded cursor-pointer sm:mr-2 text-primary-500 outline-offset-2 hover:border-transparent hover:text-slate-400 focus:text-slate-400"*/
+                  className="hover:bg-primary-500 bg-[#2579bceb] text-white inline-block w-full px-8 py-3 mb-3 text-xl font-bold leading-loose text-center hover:text-gray-200 transition-colors ease-in-out delay-0 duration-300 focus-within:outline outline-white focus:outline-white hover:shadow-lg mx-auto  rounded-lg sm:w-4/5 sm:mb-0"
                   href="#mailgo"
                   data-address="contact"
                   data-domain="viadelweb.com"
@@ -256,7 +256,7 @@ const Contact = ({ data, location }) => {
                   contact@viadelweb.com
                 </a>
               </p>
-              <h4 className="flex px-0 py-4 m-auto text-xs leading-normal tracking-widest text-center uppercase text-regular-text dark:text-white">
+              <h4 className="flex justify-center px-0 py-4 m-auto text-xs leading-normal tracking-widest text-center uppercase text-regular-text dark:text-white">
                 Follow Us
               </h4>
               <div className="flex px-0 py-4 m-auto text-center">
@@ -264,7 +264,7 @@ const Contact = ({ data, location }) => {
                   href="https://twitter.com/viadelweb"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-8 bg-transparent cursor-pointer text-sky-600 dark:text-white hover:border-transparent hover:text-slate-400 dark:hover:text-primary-400 dark:focus:text-primary-400 focus:text-slate-400"
+                  className="p-8 bg-transparent cursor-pointer text-primary-500 dark:text-white hover:border-transparent hover:text-slate-400 dark:hover:text-primary-400 dark:focus:text-primary-400 focus:text-slate-400"
                   style={{
                     transition:
                       "border-bottom-color 0.2s ease 0s, color 0.2s ease 0s",
@@ -290,7 +290,7 @@ const Contact = ({ data, location }) => {
                   href="https://linkedin.com/company/viadelweb"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-8 bg-transparent cursor-pointer text-sky-600 dark:text-white hover:border-transparent hover:text-slate-400 dark:hover:text-primary-400 dark:focus:text-primary-400 focus:text-slate-400"
+                  className="p-8 bg-transparent cursor-pointer text-primary-500 dark:text-white hover:border-transparent hover:text-slate-400 dark:hover:text-primary-400 dark:focus:text-primary-400 focus:text-slate-400"
                   style={{
                     transition:
                       "border-bottom-color 0.2s ease 0s, color 0.2s ease 0s",
@@ -298,7 +298,7 @@ const Contact = ({ data, location }) => {
                 >
                   <svg
                     stroke="currentColor"
-                    fill="currentColor"
+                    fill="currentCo lor"
                     strokeWidth={0}
                     viewBox="0 0 448 512"
                     height="1.5em"
@@ -316,7 +316,7 @@ const Contact = ({ data, location }) => {
                   href="https://facebook.com/viadelweb"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-8 bg-transparent cursor-pointer text-sky-600 dark:text-white hover:border-transparent hover:text-slate-400 dark:hover:text-primary-400 dark:focus:text-primary-400 focus:text-slate-400"
+                  className="p-8 bg-transparent cursor-pointer text-primary-500 dark:text-white hover:border-transparent hover:text-slate-400 dark:hover:text-primary-400 dark:focus:text-primary-400 focus:text-slate-400"
                   style={{
                     transition:
                       "border-bottom-color 0.2s ease 0s, color 0.2s ease 0s",

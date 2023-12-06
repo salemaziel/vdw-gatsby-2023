@@ -6,9 +6,9 @@ function HomeHero({ title, subtitle, lbutton, lbuttonlink, rbutton, rbuttonlink 
             <div className="hero bg-hero-background dark:bg-hero-background-dark">
                 <div className="flex inner-hero">
                     {/* Simple CSS Waves */}
-                    <div className="container flex flex-col items-center justify-center px-4 pt-32 pb-24 mx-auto md:py-24">
+                    <div className="container flex flex-col items-center justify-center px-4 pb-24 mx-auto pt-28 md:py-24">
                         <div className="w-full md:text-left lg:pt-10 lg:mt-8 lg:w-2/3">
-                            <div className="flex flex-col pt-24 pb-16 md:pb-20 lg:py-8">
+                            <div className="flex flex-col pt-20 pb-16 md:pb-20 lg:py-8">
                                 {title ? (
                                     <h1 className="mb-8 text-4xl font-light leading-10 tracking-wide text-white title-font sm:text-6xl font-lato headline">
                                         {title}

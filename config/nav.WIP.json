@@ -5,8 +5,16 @@
       "permalink": "/about/"
     },
     {
+      "name": "Blog",
+      "permalink": "https://viadelweb.cloud/"
+    },
+    {
       "name": "Contact",
       "permalink": "/contact"
+    },
+    {
+      "name": "Resources",
+      "permalink": "/resources/"
     },
     {
       "name": "Services",

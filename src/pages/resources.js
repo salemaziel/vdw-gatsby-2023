@@ -3,6 +3,11 @@ import { graphql } from "gatsby"
 
 import Seo from '../components/seo';
 import Layout from "@/components/layout/layout";
+import ContentSection from '../components/PageComponents/services/ContentSection';
+
+import SideBarLayout from '../components/PageComponents/resources/sidebarlayout';
+import Container from '../components/UI/Container';
+import Section from '../components/UI/Section';
 
 
 const Resources = ({ data, location }) => {
@@ -10,7 +15,33 @@ const Resources = ({ data, location }) => {
     return (
         
         <Layout location={location} title={siteTitle}>
-        <h1>Resources</h1>
+
+            <SideBarLayout>
+
+
+              <ContentSection
+        title="How Can We Help You Develop Your Digital Real Estate?"
+        subtitle=""
+        strapline=""
+        size="md"
+        bgColor=""
+        bgImage=""
+        bgImageOpacity={1}
+        textColor=""
+      />
+
+
+            </SideBarLayout>
+        
+
+
+
+
+
+
+
+
+        
         </Layout>
     )
 }

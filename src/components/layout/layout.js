@@ -1,6 +1,6 @@
 //import *  as React from "react"
 import React, { useState, useCallback, useEffect } from 'react'
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import Header from "./HeaderMain"
 import Footer from "./footer"
 import clsx from "clsx"
@@ -11,16 +11,18 @@ const Layout = ({ location, children }) => {
 
   const [scroll, setScroll] = useState(false);
 
+
+  const handleScroll = useCallback(() => {
+    setScroll(window.scrollY > 30);
+  }, []);
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
   
-  const handleScroll = useCallback(() => {
-    setScroll(window.scrollY > 30);
-  }, []);
 
 
   const headerClass = clsx(

@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 import nav from '../../../config/nav.json'
 import navbutton from '../../../config/nav.json'
 import Link from '@/resolvers/Link'
-import Image from '@/resolvers/Image'
-
+//import Image from '@/resolvers/Image'
+import { StaticImage } from "gatsby-plugin-image"
 import DarkmodeToggle from '../DarkmodeToggle'
 import Container from '../UI/Container'
 
 //import Logo from '@/images/logo-horiz.png'
-import Logo2 from '@/images/logo-horiz-white2.png'
+//import Logo2 from '@/images/logo-horiz-white2.png'
 //import clsx from 'clsx'
 
 const Header = () => {
@@ -27,16 +27,30 @@ const Header = () => {
     setScroll(window.scrollY > 30);
   }, []);
 */
-
+/*
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+*/
 
 return (
 
-    <Container className="flex items-center justify-between m-auto lg:gap-20">
-      <Link to="/" className="">
-        <Image src={Logo2} alt="Logo" className="h-14 md:w-auto md:h-20 " />
+    <Container className="flex items-center justify-between m-auto lg:gap-16">
+      <Link to="/" className="h-auto w-80">
+        {/*<Image src={Logo2} alt="Logo" className="h-14 md:w-auto md:h-20 " />*/}
+        <StaticImage
+          className=""
+          layout="constrained"
+          formats={["auto", "webp", "avif"]}
+          src="../../images/logo-horiz-white2.png"
+          width={200}
+          quality={95}
+          alt="Via Del Web Logo"
+          loading="eager"
+          placeholder="blurred"
+          imgClassName="h-14 w-full md:h-20"
+          
+        />
       </Link>
       <div className="items-center hidden md:flex">
         <nav className="flex font-bold gap-14 ">

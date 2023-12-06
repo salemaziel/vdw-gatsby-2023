@@ -3,7 +3,9 @@ import Section from "../Section";
 //import Container from "react-bootstrap/Container";
 //import Row from "react-bootstrap/Row";
 //import Col from "react-bootstrap/Col";
-import { Link } from "gatsby";
+//import { Link } from "gatsby";
+import Link from "@/resolvers/Link"
+
 //import "./FooterMultiColumn.scss";
 import "./FooterMultiColumn.css"
 
@@ -33,13 +35,6 @@ function FooterMultiColumn(props) {
           <div className="col-12 md:col-4">
             <Link to="/">
               <div>
-                {/*<img
-                  className="FooterMultiColumn__logo"
-                  src={props.logo}
-                  alt="Logo"
-                  loading="lazy"
-                />*/}
-
 <StaticImage
               
               layout="constrained"

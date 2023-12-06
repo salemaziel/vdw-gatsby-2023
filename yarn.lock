@@ -1971,6 +1971,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@heroicons/react@npm:^2.0.18":
+  version: 2.0.18
+  resolution: "@heroicons/react@npm:2.0.18"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 597e8668818623d568a302e343ef06b69f62ce297c14b88c2ebbfed0c0f00cd85ec44fae33ec8a249931b4e7dcf145743ae3198095a9f4682108de5155f5f4c3
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.5.0":
   version: 0.5.0
   resolution: "@humanwhocodes/config-array@npm:0.5.0"
@@ -7570,41 +7579,6 @@ __metadata:
   checksum: 2b578429e3294b59dee64a46a3cbbbb6bef77dd2b5b5e64a61b4a0a7ca61872669dd9ffbcd3821b9959403ffe6527901d4c4537f6c47ab88b45e5e94fe960f75
   languageName: node
   linkType: hard
-
-"gatsby-starter-default@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "gatsby-starter-default@workspace:."
-  dependencies:
-    "@fontsource-variable/montserrat": ^5.0.9
-    "@fontsource-variable/rasa": ^5.0.9
-    "@fontsource/lato": ^5.0.9
-    "@fontsource/merriweather": ^5.0.8
-    "@tailwindcss/forms": ^0.5.6
-    "@tailwindcss/typography": ^0.5.9
-    autoprefixer: ^10.4.15
-    clsx: ^2.0.0
-    gatsby: ^5.12.3
-    gatsby-plugin-brotli: ^2.1.0
-    gatsby-plugin-dark-mode: ^1.1.2
-    gatsby-plugin-image: ^3.12.0
-    gatsby-plugin-manifest: ^5.12.0
-    gatsby-plugin-postcss: ^6.12.0
-    gatsby-plugin-preload-fonts: ^4.12.0
-    gatsby-plugin-root-import: ^2.0.9
-    gatsby-plugin-sharp: ^5.12.0
-    gatsby-source-filesystem: ^5.12.0
-    gatsby-transformer-sharp: ^5.12.0
-    postcss: ^8.4.28
-    postcss-import: ^15.1.0
-    postcss-nested: ^6.0.1
-    prettier: ^3.0.2
-    prettier-plugin-tailwindcss: ^0.5.3
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    tailwind-bootstrap-grid: ^5.0.1
-    tailwindcss: ^3.3.3
-  languageName: unknown
-  linkType: soft
 
 "gatsby-telemetry@npm:^4.12.0":
   version: 4.12.0
@@ -14031,6 +14005,42 @@ __metadata:
   checksum: ae0123222c6df65b437669d63dfa8c36cee20a504101b2fcd97b8bf76f91259c17f9f2b4d70a1e3c6bbcee7f51b28392833adb6b2770b23b01abec84e369660b
   languageName: node
   linkType: hard
+
+"via-del-web@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "via-del-web@workspace:."
+  dependencies:
+    "@fontsource-variable/montserrat": ^5.0.9
+    "@fontsource-variable/rasa": ^5.0.9
+    "@fontsource/lato": ^5.0.9
+    "@fontsource/merriweather": ^5.0.8
+    "@heroicons/react": ^2.0.18
+    "@tailwindcss/forms": ^0.5.6
+    "@tailwindcss/typography": ^0.5.9
+    autoprefixer: ^10.4.15
+    clsx: ^2.0.0
+    gatsby: ^5.12.3
+    gatsby-plugin-brotli: ^2.1.0
+    gatsby-plugin-dark-mode: ^1.1.2
+    gatsby-plugin-image: ^3.12.0
+    gatsby-plugin-manifest: ^5.12.0
+    gatsby-plugin-postcss: ^6.12.0
+    gatsby-plugin-preload-fonts: ^4.12.0
+    gatsby-plugin-root-import: ^2.0.9
+    gatsby-plugin-sharp: ^5.12.0
+    gatsby-source-filesystem: ^5.12.0
+    gatsby-transformer-sharp: ^5.12.0
+    postcss: ^8.4.28
+    postcss-import: ^15.1.0
+    postcss-nested: ^6.0.1
+    prettier: ^3.0.2
+    prettier-plugin-tailwindcss: ^0.5.3
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    tailwind-bootstrap-grid: ^5.0.1
+    tailwindcss: ^3.3.3
+  languageName: unknown
+  linkType: soft
 
 "watchpack@npm:^2.4.0":
   version: 2.4.0
