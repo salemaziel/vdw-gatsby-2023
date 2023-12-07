@@ -62,11 +62,11 @@ package = "netlify-plugin-gatsby-cache"
     '''
     Content-Security-Policy-Report-Only = '''
       default-src 'self'; 
-      script-src 'self' 'unsafe-inline' https://api.netlify.com https://netlify.com https://link.msgsndr.com; 
+      script-src 'self' 'unsafe-inline' https://*.viadelweb.com https://api.netlify.com https://netlify.com https://link.msgsndr.com; 
       style-src 'self' 'unsafe-inline' https://api.leadconnectorhq.com https://*.leadconnectorhq.co; 
       img-src 'self' data: https://images.unsplash.com; 
-      font-src 'self'; 
-      connect-src 'self' https://identity.netlify.com https://netlify.com https://*.netlify.com https://api.github.com https://ocsp.digicert.com; 
+      font-src 'self' data: https://*.viadelweb.com; 
+      connect-src 'self' https://*.viadelweb.com https://identity.netlify.com https://netlify.com https://*.netlify.com https://api.github.com https://ocsp.digicert.com; 
       media-src 'self'; 
       object-src 'self'; 
       prefetch-src 'self' https://link.msgsndr.com https://api.leadconnectorhq.com; 
