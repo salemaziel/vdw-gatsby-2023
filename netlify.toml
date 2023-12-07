@@ -69,7 +69,6 @@ package = "netlify-plugin-gatsby-cache"
       connect-src 'self' https://*.viadelweb.com https://identity.netlify.com https://netlify.com https://*.netlify.com https://api.github.com https://ocsp.digicert.com; 
       media-src 'self'; 
       object-src 'self'; 
-      prefetch-src 'self' https://link.msgsndr.com https://api.leadconnectorhq.com; 
       child-src 'self' https://api.leadconnectorhq.com; 
       frame-src 'self' https://api.leadconnectorhq.com; 
       worker-src 'self'; 
