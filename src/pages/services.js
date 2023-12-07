@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 //import S2about from "../components/PageComponents/home/s2about"
 //import S3services from "../components/PageComponents/home/s3services"
 import ServicesHero from "../components/PageComponents/services/ServicesHero"
-import S2Features from "../components/PageComponents/services/FeaturesSection2"
+//import S2Features from "../components/PageComponents/services/FeaturesSection2"
 import ContentSection from "../components/PageComponents/services/ContentSection"
 //import CtaSection2 from "../components/UI/CtaSection2"
 

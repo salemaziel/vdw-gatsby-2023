@@ -6,8 +6,8 @@ import Layout from "@/components/layout/layout";
 import ContentSection from '../components/PageComponents/services/ContentSection';
 
 import SideBarLayout from '../components/PageComponents/resources/sidebarlayout';
-import Container from '../components/UI/Container';
-import Section from '../components/UI/Section';
+//import Container from '../components/UI/Container';
+//import Section from '../components/UI/Section';
 
 
 const Resources = ({ data, location }) => {

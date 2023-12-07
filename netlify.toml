@@ -31,8 +31,7 @@ package = "netlify-plugin-gatsby-cache"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Access-Control-Allow-Origin = '''
-      https://dev2.viadelweb.com,
-       
+      https://dev2.viadelweb.com,       
     '''      
     Access-Control-Allow-Methods = '''
       POST, 
@@ -60,10 +59,10 @@ package = "netlify-plugin-gatsby-cache"
       usb=(self),
       vr=(self)
     '''
-    Content-Security-Policy-Report-Only = '''
+    Content-Security-Policy = '''
       default-src 'self'; 
-      script-src 'self' 'unsafe-inline' https://*.viadelweb.com https://api.netlify.com https://netlify.com https://link.msgsndr.com; 
-      style-src 'self' 'unsafe-inline' https://api.leadconnectorhq.com https://*.leadconnectorhq.co; 
+      script-src 'self' 'unsafe-inline' https://*.viadelweb.com https://api.netlify.com https://netlify.com https://link.msgsndr.com/js/form_embed.js; 
+      style-src 'self' 'unsafe-inline' https://api.leadconnectorhq.com https://*.leadconnectorhq.com; 
       img-src 'self' data: https://images.unsplash.com; 
       font-src 'self' data: https://*.viadelweb.com; 
       connect-src 'self' https://*.viadelweb.com https://identity.netlify.com https://netlify.com https://*.netlify.com https://api.github.com https://ocsp.digicert.com; 
@@ -76,7 +75,7 @@ package = "netlify-plugin-gatsby-cache"
       upgrade-insecure-requests; 
       block-all-mixed-content; 
       manifest-src 'self'
-      '''
+    '''
 [[headers]]
   for = "/static/*"
   [headers.values]
