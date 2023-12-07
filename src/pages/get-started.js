@@ -18,8 +18,8 @@ const GetStarted = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
     
-<section className="py-8 bg-center bg-no-repeat sm:py-16 md:py-24 text-regular-text dark:text-white bg-hero-background dark:bg-hero-background-dark"  /*style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}*/>
-  <div className="container px-4 py-6 mx-auto md:py-24 ">
+<section className="py-8 bg-center bg-no-repeat md:py-16 text-regular-text dark:text-white bg-hero-background dark:bg-hero-background-dark"  /*style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}*/>
+  <div className="container px-4 py-4 mx-auto md:py-16 lg:py-24">
     <div className="max-w-xl mx-auto">
       {/*<div className="mb-6 text-center">
         <a className="inline-block mb-6" href="#">
@@ -71,7 +71,7 @@ const GetStarted = ({ data, location }) => {
       {/* Form 2 */}
       <iframe
   src="https://api.leadconnectorhq.com/widget/form/ttpqBDM6ZceE8mQmzmdd"
-  style={{width:"100%", height:"100%", border: "none", borderRadius: "4px"}}
+  style={{width:"100%", height:"100%", border: "none", borderRadius: "4px", minHeight:"700px"}}
   id="inline-ttpqBDM6ZceE8mQmzmdd" 
   data-layout="{'id':'INLINE'}"
   data-trigger-type="alwaysShow"
