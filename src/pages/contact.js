@@ -33,7 +33,7 @@ const Contact = ({ data, location }) => {
             </header>
             <div className="dark:text-white text-regular-text">
               <p className="py-2">
-                Get in touch with us to start your project. We'll get back to you within 24 hours.
+                Get in touch!
               </p>
               <br className />
               <form
@@ -71,7 +71,8 @@ const Contact = ({ data, location }) => {
                       aria-label="Name"
                       placeholder="Name*"
                       required
-                      className="block overflow-visible py-0 px-4 m-0 w-full h-10 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
+                      className="block overflow-visible py-8 px-4 m-0 w-full h-10 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -96,7 +97,8 @@ const Contact = ({ data, location }) => {
                       placeholder="Business Email*"
                       aria-label="Email"
                       required
-                      className="block overflow-visible py-0 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075]  focus:border-primary-600  focus:outline-offset-2"
+                      className="block overflow-visible py-8 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075]  focus:border-primary-600  focus:outline-offset-2"
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -120,7 +122,8 @@ const Contact = ({ data, location }) => {
                       id="phone"
                       aria-label="Phone"
                       placeholder="Phone Number*"
-                      className="block overflow-visible py-0 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
+                      className="block overflow-visible py-8 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -144,7 +147,8 @@ const Contact = ({ data, location }) => {
                       id="currentwebsite"
                       aria-label="Current Website URL"
                       placeholder="Current Website URL"
-                      className="block overflow-visible py-0 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
+                      className="block overflow-visible py-8 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -193,6 +197,7 @@ const Contact = ({ data, location }) => {
                       aria-label="Message"
                       placeholder="Message"
                       className="block overflow-visible py-20 px-4 m-0 w-full h-10 sm:h-14 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600"
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
                       style={{
                         outline: 0,
                         textDecoration: "none",
@@ -214,7 +219,7 @@ const Contact = ({ data, location }) => {
                         type="submit"
                         aria-label="Submit"
                         value="Send Message"
-                        className="inline-block w-full h-12 px-20 py-0 mx-0 mt-8 mb-0 font-black text-white normal-case truncate transition duration-300 ease-in-out rounded cursor-pointer hover:text-white focus:bg-green-600 focus:text-white delay-0 focus:outline-none focus:shadow-outline bg-gradient-to-r from-[#543ab7] to-[#00acc1] hover:from-green-600 hover:to-green-600"
+                        className="inline-block w-full h-auto px-20 py-3 mx-0 mt-8 mb-0 font-black text-white normal-case truncate transition duration-300 ease-in-out rounded cursor-pointer hover:text-white focus:bg-green-600 focus:text-white delay-0 focus:outline-none focus:shadow-outline bg-gradient-to-r from-[#543ab7] to-[#00acc1] hover:from-green-600 hover:to-green-600"
                         style={{
                           /*transition: "border-bottom-color 0.2s ease 0s, color 0.2s ease 0s",*/
                           fontSize: "128%",
@@ -239,7 +244,7 @@ const Contact = ({ data, location }) => {
               <p className="flex py-4 mx-auto text-center">
                 <a
                   /*className="p-8 mb-1 text-xs font-bold leading-4 uppercase bg-blue-700 rounded cursor-pointer sm:mr-2 text-primary-500 outline-offset-2 hover:border-transparent hover:text-slate-400 focus:text-slate-400"*/
-                  className="hover:bg-primary-500 bg-[#2579bceb] text-white inline-block w-full px-8 py-3 mb-3 text-xl font-bold leading-loose text-center hover:text-gray-200 transition-colors ease-in-out delay-0 duration-300 focus-within:outline outline-white focus:outline-white hover:shadow-lg mx-auto  rounded-lg sm:w-4/5 sm:mb-0"
+                  className="hover:bg-primary-500 bg-[#2579bceb] text-white inline-block w-full px-8 py-3 mb-3 text-lg font-bold leading-loose text-center hover:text-gray-200 transition-colors ease-in-out delay-0 duration-300 focus-within:outline outline-white focus:outline-white hover:shadow-lg mx-auto  rounded-lg sm:w-4/5 sm:mb-0"
                   href="#mailgo"
                   data-address="contact"
                   data-domain="viadelweb.com"

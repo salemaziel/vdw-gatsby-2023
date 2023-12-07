@@ -21,7 +21,7 @@ const Index = ({ data, location }) => {
         title="Web Solutions for Small Businesses and Entrepreneurs"
         subtitle="Let's build your Digital Real Estate."
         lbutton="Work With Us"
-        lbuttonlink="/contact"
+        lbuttonlink="/get-started"
         rbutton="Learn More"
         rbuttonlink="/about"
       />
@@ -47,7 +47,7 @@ const Index = ({ data, location }) => {
       title="The fastest way from idea to live site. Period."
       description="We'll take care of everything, from design to deployment, so you can focus on your business."
       buttonText="Get Started"
-      url="/contact"
+      url="/get-started"
        />
     </Layout>
   )
