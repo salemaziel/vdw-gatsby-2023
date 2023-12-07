@@ -71,7 +71,7 @@ const GetStarted = ({ data, location }) => {
       {/* Form 2 */}
       <iframe
   src="https://api.leadconnectorhq.com/widget/form/ttpqBDM6ZceE8mQmzmdd"
-  style={{width:"100%", height:"100%", border: "none", borderRadius: "4px", minHeight:"700px"}}
+  style={{width:"100%", height:"100%", border: "none", borderRadius: "4px"}}
   id="inline-ttpqBDM6ZceE8mQmzmdd" 
   data-layout="{'id':'INLINE'}"
   data-trigger-type="alwaysShow"

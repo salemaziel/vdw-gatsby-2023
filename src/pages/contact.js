@@ -44,6 +44,8 @@ const Contact = ({ data, location }) => {
                 data-netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true"
                 className="mx-0 mt-0 mb-8 overflow-x-hidden"
+                netlify
+
               >
                 <input
                   type="hidden"
@@ -52,7 +54,6 @@ const Contact = ({ data, location }) => {
                 <input
                   type="hidden"
                   name="form-name"
-                  defaultValue="ContactForm"
                   value="ContactForm"
                 />
                 <div className="flex flex-wrap m-auto">
@@ -221,10 +222,10 @@ const Contact = ({ data, location }) => {
                         value="Send Message"
                         className="inline-block w-full h-auto px-20 py-3 mx-0 mt-8 mb-0 font-black text-white normal-case truncate transition duration-300 ease-in-out rounded cursor-pointer hover:text-white focus:bg-green-600 focus:text-white delay-0 focus:outline-none focus:shadow-outline bg-gradient-to-r from-[#543ab7] to-[#00acc1] hover:from-green-600 hover:to-green-600"
                         style={{
-                          /*transition: "border-bottom-color 0.2s ease 0s, color 0.2s ease 0s",*/
+
                           fontSize: "128%",
                           textDecoration: "none",
-/*                          backgroundImage: "linear-gradient(60deg, rgb(84, 58, 183), rgb(0, 172, 193))",*/
+
                           listStyle: "outside none none",
                         }}
                       >
