@@ -108,7 +108,8 @@ function ContentSection(props) {
         />
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
           {posts.map((post, index) => (
-            <div
+            <Link as="div"
+              to={post.url}
               className="flex flex-col items-center overflow-hidden rounded-lg shadow-sm dark:bg-primary-800 dark:text-gray-100 "
               key={index}
             >
@@ -154,7 +155,7 @@ function ContentSection(props) {
                   </div>
                 )}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

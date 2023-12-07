@@ -19,7 +19,7 @@ import Section from "../../UI/Section";
 import SectionHeader from "../../UI/SectionHeader";
 
 function ServicesHero(props) {
-  const items = [
+ {/*} const items = [
     {
       title: "Passion",
       icon: HeartIcon,
@@ -71,7 +71,7 @@ function ServicesHero(props) {
         "We believe that design should be invisible and enhance the user experience, not get in the way. This gives room for your content to breath and attracts your users’ attention.",
       icon: CubeTransparentIcon,
     },
-  ];
+  ];*/}
 
   return (
     <Section
@@ -102,7 +102,12 @@ function ServicesHero(props) {
             strapline={props.strapline}
           />
         </div>
-        <div className="grid grid-cols-2 gap-8 p-8 text-center border rounded-lg sm:grid-cols-3 lg:grid-cols-6">
+
+
+
+
+
+        {/*<div className="grid grid-cols-2 gap-8 p-8 text-center border rounded-lg sm:grid-cols-3 lg:grid-cols-6">
           {items.map((item, index) => (
             <div className="space-y-4" key={index}>
               <item.icon
@@ -132,7 +137,7 @@ function ServicesHero(props) {
               </p>
             </div>
           ))}
-        </div>
+        </div>*/}
       </div>
     </Section>
   );
