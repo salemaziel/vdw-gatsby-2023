@@ -24,7 +24,7 @@ const Services = ({ data, location }) => {
 <ServicesHero
         title={
           <>
-            We are <span className="font-light">Via Del Web</span>
+            We are <span className="font-light text-primary-500">Via Del Web</span>
           </>
         }
         subtitle="Let's build your Digital Real Estate."
@@ -36,17 +36,6 @@ const Services = ({ data, location }) => {
         textColor=""
       />
 
-
-      <S2Features
-        title="The best tech under the hood"
-        subtitle="Build user friendly and modern dashboards using the latest tech. Now is the time with a best selling UI framework."
-        strapline="Created with passion"
-        size="md"
-        bgColor=""
-        bgImage=""
-        bgImageOpacity={1}
-        textColor=""
-      />
       <ContentSection
         title="How Can We Help You Develop Your Digital Real Estate?"
         subtitle=""

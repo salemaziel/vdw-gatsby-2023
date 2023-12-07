@@ -11,11 +11,11 @@ function ContentSection(props) {
       image:
         "https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?fit=crop&w=800&h=600",
       title:
-        "Lorem Ipsum",
+        "Web Design & Development",
       description:
-        "Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum sleo mi nec lectus.",
-      url: "/services#",
-      tags: ["ecommerce", "automation"],
+        "Custom design and development of beautiful, functional websites that are easy to use, easy to navigate, and are fully responsive web pages optimized for all devices and browsers.",
+      url: "/get-started",
+      tags: ["web-design", "web-development"],
       authorName: "Salem Aziel",
       authorUrl: "/author/salem-aziel",
       date: "March 3, 2023",
@@ -24,11 +24,11 @@ function ContentSection(props) {
     {
       image:
         "https://images.unsplash.com/photo-1519681393784-d120267933ba?fit=crop&w=800&h=600",
-      title: "Lorem Ipsum",
+      title: "Custom E-Commerce Solutions",
       description:
-        "Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum sleo mi nec lectus.",
-      url: "/services#",
-      tags: ["ecommerce", "web-design"],
+        "Custom E-Commerce websites built to scale. We build eCommerce websites that are easy to use, easy to navigate, and are fully responsive web pages optimized for all devices and browsers.",
+      url: "/get-started",
+      tags: ["ecommerce", "web-design", "web-development"],
       authorName: "Salem Aziel",
       authorUrl: "/author/salem-aziel",
       date: "February 23, 2023",
@@ -38,11 +38,11 @@ function ContentSection(props) {
       image:
         "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fit=crop&w=800&h=600",
       title:
-        "Lorem Ipsum",
+        "E-Commerce Design on Your Favorite Platform.",
       description:
-        "Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum sleo mi nec lectus.",
-      url: "/services#",
-      tags: ["ecommerce", "automation"],
+        "We build eCommerce websites that are easy to use, easy to navigate, and are fully responsive web pages optimized for all devices and browsers - all using your favorite platform, including Shopify, Woocommerce, Wix, Squarespace, and more.",
+      url: "/get-started",
+      tags: ["ecommerce", "web-design", "web-development"],
       authorName: "Salem Aziel",
       authorUrl: "/author/salem-aziel",
       date: "February 15, 2023",
@@ -52,11 +52,11 @@ function ContentSection(props) {
       image:
         "https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?fit=crop&w=800&h=600",
       title:
-        "Lorem Ipsum",
+        "Email Marketing for E-Commerce",
       description:
-        "Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum sleo mi nec lectus.",
-      url: "/services#",
-      tags: ["ecommerce", "automation"],
+        "Email marketing is one of the most effective ways to grow your business. We create email marketing campaigns that are designed to convert your subscribers into customers.",
+      url: "/get-started",
+      tags: ["ecommerce", "automation", "marketing"],
       authorName: "Salem Aziel",
       authorUrl: "/author/salem-aziel",
       date: "March 3, 2023",
@@ -65,11 +65,11 @@ function ContentSection(props) {
     {
       image:
         "https://images.unsplash.com/photo-1519681393784-d120267933ba?fit=crop&w=800&h=600",
-      title: "Lorem Ipsum",
+      title: "E-Commerce Automation & SEO Optimization",
       description:
-        "Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum sleo mi nec lectus.",
-      url: "/services#",
-      tags: ["ecommerce", "web-design"],
+        "We can help you automate your eCommerce business and optimize your website for conversions. We offer a variety of services, including email marketing automation, on-page and off-page SEO optimization, and more.",
+      url: "/get-started",
+      tags: ["ecommerce", "automation", "seo-optimization", "marketing"],
       authorName: "Salem Aziel",
       authorUrl: "/author/salem-aziel",
       date: "February 23, 2023",
@@ -79,11 +79,11 @@ function ContentSection(props) {
       image:
         "https://images.unsplash.com/photo-1501785888041-af3ef285b470?fit=crop&w=800&h=600",
       title:
-        "Lorem Ipsum",
+        "Video Marketing AI for Youtube",
       description:
-        "Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum sleo mi nec lectus.",
-      url: "/services#",
-      tags: ["ecommerce", "automation"],
+        "Video Marketing for YouTube. Social Media marketing with AI Generated Video. Build Your Brand Vith Video.",
+      url: "/get-started",
+      tags: ["automation", "marketing", "video"],
       authorName: "Salem Aziel",
       authorUrl: "/author/salem-aziel",
       date: "February 15, 2023",

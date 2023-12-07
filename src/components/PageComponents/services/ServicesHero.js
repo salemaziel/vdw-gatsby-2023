@@ -9,6 +9,12 @@ import {
   FireIcon,
   ArrowDownIcon,
 } from "@heroicons/react/24/solid";
+
+import {StaticImage} from "gatsby-plugin-image";
+
+
+//import LogoSVG from "@/images/logo-vertical-white2.svg";
+
 import Section from "../../UI/Section";
 import SectionHeader from "../../UI/SectionHeader";
 
@@ -76,8 +82,20 @@ function ServicesHero(props) {
       textColor={props.textColor}
     >
       <div className="container space-y-16">
-        <div className="text-center">
-          <CubeTransparentIcon className="inline-block w-16 h-16 mb-5 text-blue-600" />
+        <div className="justify-center text-center">
+          <StaticImage
+            src="../../../images/logo-vertical.png"
+            alt="Via Del Web Logo"
+            width={300}
+            height={300}
+            className="inline-block w-32 h-32 mb-5" 
+            layout="constrained"
+            formats={["auto", "webp", "avif"]}
+            quality={95}
+            placeholder="blurred"
+            loading="eager"
+
+/>
           <SectionHeader
             title={props.title}
             subtitle={props.subtitle}
