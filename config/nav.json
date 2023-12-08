@@ -1,10 +1,6 @@
 {
   "nav": [
     {
-      "name": "About",
-      "permalink": "/about/"
-    },
-    {
       "name": "Contact",
       "permalink": "/contact"
     },

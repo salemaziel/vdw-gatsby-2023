@@ -22,11 +22,12 @@ const About = ({ data, location }) => {
 
 
 <AboutHero
-        title={
+        /*title={
           <>
             We are <span className="font-light">Via Del Web</span>
           </>
-        }
+        }*/
+        title=""
         subtitle="Let's build your Digital Real Estate."
         strapline=""
         size="md"
