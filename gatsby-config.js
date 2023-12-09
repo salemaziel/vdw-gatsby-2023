@@ -19,7 +19,7 @@ module.exports = {
     ...config,
   },
   flags: {
-    DEV_SSR: true,    
+    DEV_SSR: false,    
   },
 
   plugins: [
@@ -35,6 +35,24 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-matomo",
+      options: {
+        siteId: "2",
+        matomoUrl: "https://analytics.viadelweb.cloud/",
+        siteUrl: "https://viadelweb.com/",
+        // All the optional settings
+//        matomoPhpScript: "piwik.php",
+        matomoJsScript: "matomo.js",
+        exclude: ["/offline-plugin-app-shell-fallback/"],
+        requireConsent: false,
+        disableCookies: true,
+        //cookieDomain: "*.example.org",
+//        localScript: "/piwik.js",
+        dev: false,
+        enableJSErrorTracking: true,
       },
     },
 //    {
