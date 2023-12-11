@@ -61,11 +61,11 @@ package = "netlify-plugin-gatsby-cache"
     '''
     Content-Security-Policy = '''
       default-src 'self'; 
-      script-src 'self' 'unsafe-inline' https://viadelweb.com https://*.viadelweb.com https://api.netlify.com https://netlify.com https://link.msgsndr.com/js/form_embed.js https://*.googletagmanager.com https://*.google-analytics.com; 
+      script-src 'self' 'unsafe-inline' https://viadelweb.com https://*.viadelweb.com https://analytics.viadelweb.cloud https://api.netlify.com https://netlify.com https://link.msgsndr.com/js/form_embed.js https://*.googletagmanager.com https://*.google-analytics.com; 
       style-src 'self' 'unsafe-inline' https://viadelweb.com https://api.leadconnectorhq.com https://*.leadconnectorhq.com; 
-      img-src 'self' data: https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com; 
+      img-src 'self' data: https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://analytics.viadelweb.cloud; 
       font-src 'self' data: https://viadelweb.com https://*.viadelweb.com; 
-      connect-src 'self' https://viadelweb.com https://*.viadelweb.com https://identity.netlify.com https://netlify.com https://*.netlify.com https://api.github.com https://ocsp.digicert.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; 
+      connect-src 'self' https://viadelweb.com https://*.viadelweb.com https://identity.netlify.com https://netlify.com https://*.netlify.com https://api.github.com https://ocsp.digicert.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://analytics.viadelweb.cloud; 
       media-src 'self'; 
       object-src 'none'; 
       child-src 'self' https://analytics.viadelweb.comhttps://viadelweb.com https://api.leadconnectorhq.com; 
