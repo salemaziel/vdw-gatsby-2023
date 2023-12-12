@@ -1,12 +1,6 @@
 import React from "react";
 import Section from "../Section";
-//import Container from "react-bootstrap/Container";
-//import Row from "react-bootstrap/Row";
-//import Col from "react-bootstrap/Col";
-//import { Link } from "gatsby";
 import Link from "@/resolvers/Link"
-
-//import "./FooterMultiColumn.scss";
 import "./FooterMultiColumn.css"
 
 import { StaticImage } from "gatsby-plugin-image"
@@ -18,7 +12,6 @@ import TwitterSVG from "@/images/icon-twitter.svg"
 import IGSVG from "@/images/icon-instagram.svg"
 import LinkedIn from "@/images/icon-linkedin.svg"
 
-//import Logo2 from "../../images/logo-horiz-white2.png /images/logo-horiz-white2.png"
 
 function FooterMultiColumn(props) {
   return (
