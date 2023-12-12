@@ -3,6 +3,8 @@ import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import Container from "../components/UI/Container"
 
+import ContactForm from "../components/PageComponents/contact/contactForm"
+
 import { graphql } from "gatsby"
 
 const Contact = ({ data, location }) => {
@@ -36,7 +38,11 @@ const Contact = ({ data, location }) => {
                 Get in touch!
               </p>
               <br className />
-              <form
+
+
+              
+              {/*<NetlifyForm name="Contact Form">*/}
+              {/*<form
                 name="ContactForm"
                 action="/thanks"
                 method="post"
@@ -73,7 +79,7 @@ const Contact = ({ data, location }) => {
                       placeholder="Name*"
                       required
                       className="block overflow-visible py-8 px-4 m-0 w-full h-10 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
-                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"* /
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -99,7 +105,7 @@ const Contact = ({ data, location }) => {
                       aria-label="Email"
                       required
                       className="block overflow-visible py-8 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075]  focus:border-primary-600  focus:outline-offset-2"
-                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"* /
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -124,7 +130,7 @@ const Contact = ({ data, location }) => {
                       aria-label="Phone"
                       placeholder="Phone Number*"
                       className="block overflow-visible py-8 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
-                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"* /
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -149,7 +155,7 @@ const Contact = ({ data, location }) => {
                       aria-label="Current Website URL"
                       placeholder="Current Website URL"
                       className="block overflow-visible py-8 px-4 m-0 w-full h-10 sm:h-14 text-base leading-6 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600 focus:outline-offset-2"
-                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"* /
                       style={{
                         borderImage: "initial",
                         outline: 0,
@@ -181,7 +187,7 @@ const Contact = ({ data, location }) => {
                       }}
                     />
                   </div>
-                </div>*/}
+                </div>* /}
                 <div className="flex flex-wrap m-auto">
                   <div className="w-full mb-4 sm:w-11/12">
                     <label
@@ -198,7 +204,7 @@ const Contact = ({ data, location }) => {
                       aria-label="Message"
                       placeholder="Message"
                       className="block overflow-visible py-20 px-4 m-0 w-full h-10 sm:h-14 rounded border border-solid appearance-none cursor-text border-neutral-200 bg-neutral-100 bg-opacity-[0.075] focus:border-primary-600"
-                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"*/
+                      /*className="block w-full p-3 leading-5 border rounded-lg shadow-md appearance-none text-coolGray-900 placeholder-[#e5e7eb] border-[#e5e7eb]  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50" * /
                       style={{
                         outline: 0,
                         textDecoration: "none",
@@ -229,12 +235,17 @@ const Contact = ({ data, location }) => {
                           listStyle: "outside none none",
                         }}
                       >
-                        Submit{/* */}
+                        Submit{/* * /}
                       </button>
                     </li>
                   </ul>
                 </div>
               </form>
+              {/*</NetlifyForm>*/}
+              <ContactForm />
+
+
+
             </div>
           </div>
           <div className="w-full mx-auto my-0 text-left border-0 border-gray-200 border-solid sm:w-1/4">
