@@ -18,7 +18,22 @@ package = "netlify-plugin-gatsby-cache"
   [plugins.inputs]
   output_path = "reports/lighthouse.html"
 [[plugins]]
-  package = "@netlify/plugin-gatsby"    
+  package = "@netlify/plugin-gatsby"
+
+[[redirects]]
+  from = "/services/*"
+  to = "/services"
+
+  # The default HTTP status code is 301, but you can
+  # define a different one.
+  status = 302
+
+  # By default, redirects won’t be applied if there’s a file
+  # with the same path as the one defined in the `from` property.
+  # Setting `force` to `true` will make the redirect rule
+  # take precedence over any existing files.
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
