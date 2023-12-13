@@ -51,7 +51,7 @@ module.exports = {
         matomoPhpScript: "piwik.php",
         matomoJsScript: "matomo.js",
         exclude: ["/offline-plugin-app-shell-fallback/"],
-        requireConsent: true,
+        requireConsent: false,
         disableCookies: false,
         cookieDomain: "*.viadelweb.com",
 //        localScript: "/piwik.js",
