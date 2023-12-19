@@ -3,7 +3,8 @@ import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import Container from "../components/UI/Container"
 
-import ContactForm from "../components/PageComponents/contact/contactForm"
+//import ContactForm from "../components/PageComponents/contact/contactForm"
+import ContactForm2 from "../components/PageComponents/contact/contactForm2"
 
 import { graphql } from "gatsby"
 
@@ -242,7 +243,7 @@ const Contact = ({ data, location }) => {
                 </div>
               </form>
               {/*</NetlifyForm>*/}
-              <ContactForm />
+              <ContactForm2 />
 
 
 

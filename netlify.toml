@@ -2,7 +2,6 @@
 command = "gatsby build"
 publish = "public"
 
-
 [build.environment]
  NODE_VERSION = "18.17.1"
  NPM_VERSION = "9.6.7"
@@ -17,6 +16,7 @@ package = "netlify-plugin-gatsby-cache"
   package = "@netlify/plugin-lighthouse"
   [plugins.inputs]
   output_path = "reports/lighthouse.html"
+
 [[plugins]]
   package = "@netlify/plugin-gatsby"
 
