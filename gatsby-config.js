@@ -66,8 +66,10 @@ module.exports = {
       options: {
         //You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "process.env.GA_UA_ID", // Google Analytics / GA
-          "process.env.GA_MEASUREMENT_ID", // Google Analytics / GTag
+          //"process.env.GA_UA_ID", // Google Analytics / GA
+          "UA-187979754-1",
+          //"process.env.GA_MEASUREMENT_ID", // Google Analytics / GTag
+          "G-FM4XJB8PHE",
           //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
           //"DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
@@ -85,7 +87,7 @@ module.exports = {
           // Setting this parameter is also optional
           respectDNT: true,
           // Avoids sending pageview hits from custom paths
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
+          exclude: ["/preview/**"],
           // Defaults to https://www.googletagmanager.com
           //origin: "YOUR_SELF_HOSTED_ORIGIN",
           // Delays processing pageview events on route update (in milliseconds)
