@@ -9,7 +9,7 @@
  */
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
- })
+})
 
 const path = require('path')
 const config = require("./config/site")
@@ -23,13 +23,12 @@ module.exports = {
     ...config,
   },
   flags: {
-    DEV_SSR: true,    
+    DEV_SSR: true,
   },
 
   plugins: [
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-dark-mode`,
     `gatsby-plugin-postcss`,
     {
       resolve: 'gatsby-plugin-brotli',
@@ -54,9 +53,9 @@ module.exports = {
         requireConsent: false,
         disableCookies: false,
         cookieDomain: "*.viadelweb.com",
-//        localScript: "/piwik.js",
+        //        localScript: "/piwik.js",
         dev: false,
-        enableJSErrorTracking: true,
+        enableJSErrorTracking: false,
         trackLoad: true,
 
       },
@@ -95,22 +94,22 @@ module.exports = {
         },
       },
     },
-//    {
-//      resolve: `gatsby-source-filesystem`,
-//        options: {
-//          name: `pages`,
-//          path: `${__dirname}/content/pages`,
-//        },
-//    },
-//    {
-//      resolve: `gatsby-source-filesystem`,
-//        options: {
-//          name: `data`,
-//          path: `${__dirname}/src/data`,
-//          ignore: [`**/\.*`], // ignore files starting with a dot
-//          fastHash: true,           // Use "mtime" and "inode" to fingerprint files (to check if file has changed)
-//        },
-//    },
+    //    {
+    //      resolve: `gatsby-source-filesystem`,
+    //        options: {
+    //          name: `pages`,
+    //          path: `${__dirname}/content/pages`,
+    //        },
+    //    },
+    //    {
+    //      resolve: `gatsby-source-filesystem`,
+    //        options: {
+    //          name: `data`,
+    //          path: `${__dirname}/src/data`,
+    //          ignore: [`**/\.*`], // ignore files starting with a dot
+    //          fastHash: true,           // Use "mtime" and "inode" to fingerprint files (to check if file has changed)
+    //        },
+    //    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

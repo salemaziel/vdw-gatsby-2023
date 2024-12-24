@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { graphql } from "gatsby"
 
 //import Bio from "../components/bio"
@@ -15,25 +15,18 @@ import ContentSection from "../components/PageComponents/services/ContentSection
 import CtaBanner2 from "../components/UI/ctaBanner2"
 
 const Services = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+//  const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
 
 
-<ServicesHero
+      <ServicesHero
         title={
           <>
             We are <span className="font-light text-primary-500">Via Del Web</span>
           </>
         }
-        subtitle="Let's build your Digital Real Estate."
-        strapline=""
-        size="md"
-        bgColor=""
-        bgImage=""
-        bgImageOpacity={1}
-        textColor=""
       />
 
       <ContentSection
@@ -41,7 +34,7 @@ const Services = ({ data, location }) => {
         subtitle=""
         strapline=""
         size="md"
-        bgColor=""
+        bg=""
         bgImage=""
         bgImageOpacity={1}
         textColor=""
@@ -57,12 +50,12 @@ const Services = ({ data, location }) => {
         textColor="text-white"
       />*/}
 
-<CtaBanner2
-      title="The fastest way from idea to live site. Period."
-      description="We'll take care of everything, from design to deployment, so you can focus on your business."
-      buttonText="Get Started"
-      url="/contact"
-       />
+      <CtaBanner2
+        title="The fastest way from idea to live site. Period."
+        description="We'll take care of everything, from design to deployment, so you can focus on your business."
+        buttonText="Get Started"
+        url="/contact"
+      />
 
     </Layout>
   )

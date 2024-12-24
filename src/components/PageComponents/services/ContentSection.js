@@ -1,7 +1,6 @@
 import React from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
-import Section from "../../UI/Section";
-import SectionHeader from "../../UI/SectionHeader";
+import SectionHeader from "../../SectionHeader";
 //import { Link } from "./../util/router";
 import Link from '@/resolvers/Link';
 
@@ -92,19 +91,13 @@ function ContentSection(props) {
   ];
 
   return (
-    <Section
-      size={props.size}
-      bgColor={props.bgColor}
-      bgImage={props.bgImage}
-      bgImageOpacity={props.bgImageOpacity}
-      textColor={props.textColor}
-    >
+<section className="relative pt-5 pb-3 bg-theme-light-bg dark:bg-theme-dark-bg">
       <div className="container space-y-16">
         <SectionHeader
           title={props.title}
           subtitle={props.subtitle}
           strapline={props.strapline}
-          className="text-center"
+          className="text-center text-theme-light-bg dark:text-theme-dark-bg"
         />
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
           {posts.map((post, index) => (
@@ -159,7 +152,7 @@ function ContentSection(props) {
           ))}
         </div>
       </div>
-    </Section>
+</section>
   );
 }
 

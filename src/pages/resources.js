@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { graphql } from "gatsby"
 
 import Seo from '../components/seo';
@@ -11,29 +11,27 @@ import SideBarLayout from '../components/PageComponents/resources/sidebarlayout'
 
 
 const Resources = ({ data, location }) => {
-    const siteTitle = data.site.siteMetadata?.title || `Resources`
-    return (
-        
-        <Layout location={location} title={siteTitle}>
+  const siteTitle = data.site.siteMetadata?.title || `Resources`
+  return (
 
-            <SideBarLayout>
+    <Layout location={location} title={siteTitle}>
 
-
-              <ContentSection
-        title="How Can We Help You Develop Your Digital Real Estate?"
-        subtitle=""
-        strapline=""
-        size="md"
-        bgColor=""
-        bgImage=""
-        bgImageOpacity={1}
-        textColor=""
-      />
+      <SideBarLayout>
 
 
-            </SideBarLayout>
-        
+        <ContentSection
+          title="How Can We Help You Develop Your Digital Real Estate?"
+          subtitle=""
+          strapline=""
+          size="md"
+          bgColor=""
+          bgImage=""
+          bgImageOpacity={1}
+          textColor=""
+        />
 
+
+      </SideBarLayout>
 
 
 
@@ -41,9 +39,11 @@ const Resources = ({ data, location }) => {
 
 
 
-        
-        </Layout>
-    )
+
+
+
+    </Layout>
+  )
 }
 
 export default Resources;

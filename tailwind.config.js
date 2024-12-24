@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
+  mode: "jit",
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
@@ -800,6 +800,7 @@ module.exports = {
       lg: "991px",
       xl: "1280px",
       "2xl": "1536px",
+      "3xl": "2400px",
     },
     scrollMargin: ({ theme }) => ({
       ...theme("spacing"),
@@ -1005,14 +1006,16 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-background": "linear-gradient(60deg,rgba(84, 58, 183, 0.9) 0%, rgba(0, 172, 193, 0.9) 100%), url('src/images/annie-marek-barta-hKNVVGNba68-unsplash.jpg')",
-        "hero-background-dark": "linear-gradient(60deg,rgba(84, 58, 183, 0.1) 0%, rgba(0, 172, 193, 0.1) 100%), url('src/images/annie-marek-night-barta-hKNVVGNba68.png')",
+        "hero-background":
+          "linear-gradient(60deg,rgba(84, 58, 183, 0.9) 0%, rgba(0, 172, 193, 0.9) 100%), url('src/images/annie-marek-barta-hKNVVGNba68-unsplash.jpg')",
+        "hero-background-dark":
+          "linear-gradient(60deg,rgba(84, 58, 183, 0.1) 0%, rgba(0, 172, 193, 0.1) 100%), url('src/images/annie-marek-night-barta-hKNVVGNba68.jpg')",
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
         montserrat: ["Montserrat Variable", "sans-serif"],
         merriweather: ["Merriweather", "serif"],
-        rasa: ["Rasa Variable","serif"],
+        rasa: ["Rasa Variable", "serif"],
       },
       animation: {
         "fade-in-fwd":
@@ -1059,16 +1062,32 @@ module.exports = {
           800: "#164776",
           900: "#183d62",
           950: "#102641",
+        },
+        // Theme colors
+        theme: {
+          // Light mode
+          light: {
+            bg: "#ffffff",
+            text: "#2e353f",
+            heading: "#1a202c",
+            muted: "#4f5969",
+          },
+          // Dark mode
+          dark: {
+            bg: "rgba(26,26,57,1)", // Your current dark background
+            text: "#e5e7eb",
+            heading: "#ffffff",
+            muted: "#9ca3af",
+          },
+        },
+      },
+      textColor: {
+        "regular-text": "#2e353f",
+        "regular-text-light": "#4f5969",
+        "heading-text": "#1a202c",
+        "vdw-blue": "#2579BC",
+      },
     },
-    
-  },
-    textColor: {
-      "regular-text": "#2e353f",
-      "regular-text-light": "#4f5969",
-      "heading-text": "#1a202c",
-      "vdw-blue": "#2579BC"
-    },
-},
   },
   corePlugins: {
     container: false,
@@ -1086,4 +1105,3 @@ module.exports = {
     }),
   ],
 }
-

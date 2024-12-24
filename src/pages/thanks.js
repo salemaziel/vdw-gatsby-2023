@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { graphql } from "gatsby"
 
 import Seo from "../components/seo"
@@ -13,7 +13,7 @@ const Thanks = ({ data, location }) => {
       <Section
         id="thanks"
         className="py-8 bg-center bg-no-repeat md:py-16 text-regular-text dark:text-white bg-hero-background dark:bg-hero-background-dark"
-        /*style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}*/
+      /*style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}*/
       >
         <Container className="container px-4 py-4 mx-auto md:py-16 lg:py-24 bg-white dark:bg-[#1a1a39]">
           <h1 className="mb-4">Thanks for reaching out.</h1>

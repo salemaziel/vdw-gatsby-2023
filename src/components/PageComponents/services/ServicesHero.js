@@ -15,10 +15,14 @@ import {StaticImage} from "gatsby-plugin-image";
 
 //import LogoSVG from "@/images/logo-vertical-white2.svg";
 
-import Section from "../../UI/Section";
-import SectionHeader from "../../UI/SectionHeader";
+import Section from "../../Section";
+import SectionHeader from "../../SectionHeader";
+import Container from "../../UI/Container";
 
 function ServicesHero(props) {
+  if (!props.title && !props.subtitle && !props.description && !props.list && !props.listTitle && !props.listItems) {
+    return null;
+  }
  {/*} const items = [
     {
       title: "Passion",
@@ -74,13 +78,8 @@ function ServicesHero(props) {
   ];*/}
 
   return (
-    <Section
-      size={props.size}
-      bgColor={props.bgColor}
-      bgImage={props.bgImage}
-      bgImageOpacity={props.bgImageOpacity}
-      textColor={props.textColor}
-    >
+    <>
+<section className="relative pt-5 pb-3 bg-theme-light-bg dark:bg-theme-dark-bg">
       <div className="container space-y-16">
         <div className="justify-center text-center">
           <StaticImage
@@ -96,11 +95,7 @@ function ServicesHero(props) {
             loading="eager"
 
 />
-          <SectionHeader
-            title={props.title}
-            subtitle={props.subtitle}
-            strapline={props.strapline}
-          />
+
         </div>
 
 
@@ -139,7 +134,8 @@ function ServicesHero(props) {
           ))}
         </div>*/}
       </div>
-    </Section>
+    </section>
+          </>
   );
 }
 

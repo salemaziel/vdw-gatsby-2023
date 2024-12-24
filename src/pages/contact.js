@@ -9,9 +9,9 @@ import ContactForm2 from "../components/PageComponents/contact/contactForm2"
 import { graphql } from "gatsby"
 
 const Contact = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+//  const siteTitle = data.site.siteMetadata?.title || `Title`
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <section
         id="main"
         className="relative block px-0 pt-12 pb-10 font-light leading-9 text-left border-0 border-gray-200 border-solid text-regular-text dark:text-white"

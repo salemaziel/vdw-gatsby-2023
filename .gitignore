@@ -84,3 +84,16 @@ yarn-error.log
 .vscode/
 
 
+.env
+
+genaisrc/
+
+.genaiscript
+
+.cursorrules
+
+.cursorignore
+
+.lh/
+
+genAIscripts/

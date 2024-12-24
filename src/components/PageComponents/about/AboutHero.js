@@ -17,7 +17,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Section from "../../UI/Section"
 import SectionHeader from "../../UI/SectionHeader"
 
-function AboutHero(props) {
+function AboutHero({ size, bgColor, bgImage, bgImageOpacity, textColor, title, subtitle, strapline, className }) {
   const items = [
     {
       title: "Passion",
@@ -74,11 +74,12 @@ function AboutHero(props) {
 
   return (
     <Section
-      size={props.size}
-      bgColor={props.bgColor}
-      bgImage={props.bgImage}
-      bgImageOpacity={props.bgImageOpacity}
-      textColor={props.textColor}
+      size={size}
+      bgColor={bgColor}
+      bgImage={bgImage}
+      bgImageOpacity={bgImageOpacity}
+      textColor={textColor}
+      className={className}
     >
       <div className="container space-y-16">
         <div className="justify-center text-center">
@@ -95,9 +96,9 @@ function AboutHero(props) {
             loading="eager"
           />
           <SectionHeader
-            title={props.title}
-            subtitle={props.subtitle}
-            strapline={props.strapline}
+            title={title}
+            subtitle={subtitle}
+            strapline={strapline}
           />
         </div>
         <section className="relative block pt-5 pb-3 font-light leading-9 text-left">
@@ -160,7 +161,7 @@ function AboutHero(props) {
                     />
                   </figure>
                 </div>
-                <div className="relative py-12 px-4 mt-5 w-full rounded lg:mt-0 lg:flex-shrink-0 lg:flex-grow-0 lg:basis-1/2 lg:text-left bg-opacity-[0.3] px-4 py-12 ">
+                <div className="relative py-12 px-4 mt-5 w-full rounded lg:mt-0 lg:flex-shrink-0 lg:flex-grow-0 lg:basis-1/2 lg:text-left bg-opacity-[0.3]">
                   <header className="block px-2 text-lg">
                     <p className="relative block p-0 mx-0 my-4 text-regular-text dark:text-gray-200 font-lato">
                       My name is Salem, I am the owner and head developer of Via

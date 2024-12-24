@@ -1,43 +1,18 @@
-//import React, { useState, useCallback, useEffect } from 'react'
 import React, { useState } from 'react'
 import nav from '../../../config/nav.json'
 import navbutton from '../../../config/nav.json'
 import Link from '@/resolvers/Link'
-//import Image from '@/resolvers/Image'
 import { StaticImage } from "gatsby-plugin-image"
 import DarkmodeToggle from '../DarkmodeToggle'
 import Container from '../UI/Container'
 
-//import Logo from '@/images/logo-horiz.png'
-//import Logo2 from '@/images/logo-horiz-white2.png'
-//import clsx from 'clsx'
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//  const [scroll, setScroll] = useState(false);
 
-/*  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-  
-  const handleScroll = useCallback(() => {
-    setScroll(window.scrollY > 30);
-  }, []);
-*/
-/*
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-*/
-
-return (
-
+  return (
     <Container className="flex items-center justify-between m-auto lg:gap-16">
       <Link to="/" className="h-auto w-80">
-        {/*<Image src={Logo2} alt="Logo" className="h-14 md:w-auto md:h-20 " />*/}
+        {/*<Image src={Logo2} alt="Logo" className="h-14 md:w-auto md:h-20" />*/}
         <StaticImage
           className=""
           layout="constrained"
@@ -49,21 +24,30 @@ return (
           loading="eager"
           placeholder="blurred"
           imgClassName="h-14 w-full md:h-20"
-          
+
         />
       </Link>
       <div className="items-center hidden md:flex">
-        <nav className="flex font-bold gap-14 ">
-            {nav.nav.map((item, i) => (
+        <nav className="flex font-bold gap-14">
+          {/*{nav.nav.map((item, i) => (
               <Link to={item.permalink} className="text-white dark:text-gray-300" key={i}>
                 {item.name}
               </Link>
-            ))}
-          </nav>
+            ))}*/}
+          <Link to="/contact" className="text-white dark:text-gray-300" aria-label="Contact">
+            Contact
+          </Link>
+          <Link to="/services" className="text-white dark:text-gray-300" aria-label="Services">
+            Services
+          </Link>
 
-          <div className="flex items-center pl-6 ml-6 border-l border-slate-200 dark:border-zinc-800 text-">
-            <DarkmodeToggle />
-           {/* <a
+
+        </nav>
+
+        <div className="flex items-center pl-6 ml-6 border-l border-slate-200 dark:border-zinc-800 text-">
+          <DarkmodeToggle />
+          {/*
+           <a
               href="https://github.com/clean-commit/gatsby-starter-henlo"
               target="_blank"
               rel="noopener noreferrer"
@@ -83,34 +67,35 @@ return (
               >
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"></path>
               </svg>
-            </a>*/}
-          </div>
+            </a>
+            */}
         </div>
-        <div className="md:hidden">
-            <button
-              aria-label="Open Menu"
-              title="Open Menu"
-              className={"p-2 -mr-1 dark:text-white dark:focus:outline-none text-black-700 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-white focus:bg-white focus:text-white"}
-              onClick={() => setIsMenuOpen(true)}
-            >
-              <svg className="w-8 text-white" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-                />
-              </svg>
-            </button>
-        
+      </div>
+      <div className="md:hidden">
+        <button
+          aria-label="Open Menu"
+          title="Open Menu"
+          className={"p-2 -mr-1 rounded transition duration-200 dark:text-white dark:focus:outline-none text-black-700 focus:outline-none focus:shadow-outline hover:bg-white dark:hover:bg-black dark:hover:text-white dark:focus:bg-black dark:focus:text-black focus:bg-white focus:text-white"}
+          onClick={() => setIsMenuOpen(true)}
+        >
+          <svg className="w-8 text-white" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
+            />
+            <path
+              fill="currentColor"
+              d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
+            />
+            <path
+              fill="currentColor"
+              d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
+            />
+          </svg>
+        </button>
+
         <div className="flex items-center md:hidden">
-        <nav className="flex flex-col gap-4">
+          <nav className="flex flex-col gap-4">
             {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full p-4">
                 <div className="p-5 bg-white border rounded shadow-sm dark:shadow-slate-400 dark:bg-black">
@@ -143,82 +128,29 @@ return (
                   </div>
                   <nav className='-mt-4' >
                     <ul className="space-y-4">
-                    {nav.nav.map((item, i) => (
-                      <li key={i}>
-                        <Link 
-                        to={item.permalink}
-                        className="font-bold tracking-wide text-[#2579bceb] transition-colors duration-200 dark:text-white hover:text-gray-400"
-                         >
+                      {nav.nav.map((item, i) => (
+                        <li key={i}>
+                          <Link
+                            to={item.permalink}
+                            className="font-bold tracking-wide text-[#2579bceb] transition-colors duration-200 dark:text-white hover:text-gray-400"
+                          >
                             {item.name}
-                        </Link>
-                      </li>
-                    ))}
-                    {navbutton.navbutton.map((item, i) => (
-                      <li key={i}>
-                        <Link
-                          to={item.permalink}
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-bold tracking-wide text-white transition duration-200 bg-[#2579bceb] rounded shadow-md dark:bg-white dark:text-black hover:bg-gray-600 focus:shadow-outline focus:outline-none"
-                          aria-label="Contact"
-                          title="Contact"
-                        >
-                          {item.name}
-                        </Link>
-                      </li>
-                    ))}
+                          </Link>
+                        </li>
+                      ))}
+                      {navbutton.navbutton.map((item, i) => (
+                        <li key={i}>
+                          <Link
+                            to={item.permalink}
+                            className="inline-flex items-center justify-center w-full h-12 px-6 font-bold tracking-wide text-white transition duration-200 bg-[#2579bceb] rounded shadow-md dark:bg-white dark:text-black hover:bg-gray-600 focus:shadow-outline focus:outline-none"
+                            aria-label="Contact"
+                            title="Contact"
+                          >
+                            {item.name}
+                          </Link>
+                        </li>
+                      ))}
 
-{    /*                
-                    <li>
-                        <Link
-                          href="/about"
-                          aria-label="About"
-                          title="About Us"
-                          className="font-bold tracking-wide text-blue-800 transition-colors duration-200 hover:text-logo-blue-500"
-                        >
-                          About Us
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/services"
-                          aria-label="Services"
-                          title="Services"
-                          className="font-bold tracking-wide text-blue-800 transition-colors duration-200 hover:text-logo-blue-500"
-                        >
-                          Services
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/service-areas"
-                          aria-label="Service Areas"
-                          title="Service Areas"
-                          className="font-bold tracking-wide text-blue-800 transition-colors duration-200 hover:text-logo-blue-500"
-                        >
-                          Service Areas
-                        </Link>
-                      </li>
-
-
-                      <li>
-                        <Link
-                          to="/contact"
-                          aria-label="Contact"
-                          title="Contact"
-                          className="font-bold tracking-wide text-blue-800 transition-colors duration-200 hover:text-logo-blue-500"
-                        >
-                          Contact
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/emergency-services"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-bold tracking-wide text-white transition duration-200 bg-black rounded shadow-md hover:bg-gray-600 focus:shadow-outline focus:outline-none"
-                          aria-label="emergency services"
-                          title="Emergency Services"
-                        >
-                          Emergency Services
-                        </Link>
-                      </li>*/}
 
 
                     </ul>
@@ -226,17 +158,12 @@ return (
                 </div>
               </div>
             )}
-        </nav>
+          </nav>
         </div>
-        </div>
-      </Container>
-
+      </div>
+    </Container>
   )
 }
 
 
 export default Header
-
-  /*<header className={( !isRootPath() ? " !bg-[#2579bceb] !dark:bg-opacity-50 !dark:bg-black " : " !bg-transparent opacity-0 text-white ") + (scroll ? " bg-[#2579bceb] text-white " : " text-white " ) + "sticky top-0 left-0 right-0 z-10 flex h-20 md:h-24  dark:bg-opacity-50 dark:bg-black text-white dark:text-white"} >*/
-
-      /*</header>*/

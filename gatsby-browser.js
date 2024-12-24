@@ -5,11 +5,12 @@
  */
 
 
+
 // custom typefaces
 import "@fontsource-variable/montserrat"
 import "@fontsource/lato"
 import "@fontsource/merriweather"
 import '@fontsource-variable/rasa';
 
-import './src/styles/styletw.css'
+//import './src/styles/styletw.css'
 import './src/styles/global.css'

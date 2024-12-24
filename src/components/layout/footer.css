@@ -1,7 +1,5 @@
 .Footer {
   @apply [background:linear-gradient(60deg,#543ab7_0%,#00acc1_100%)] text-white bg-[center_bottom] bg-cover bg-scroll [background-repeat:no-repeat,no-repeat];
-  /*background-color: rgba(21, 27, 33, 0.6);*/
-  /*background-image: url('../images/field-of-flowers.jpg');*/
 }
 .Footer input,
 .Footer select,
@@ -86,11 +84,7 @@
 .Footer .content > .inner {
   @apply [display:-moz-flex] [display:-webkit-flex] [display:-ms-flex] flex w-[70em] mx-auto my-0;
 }
-/*
-.Footer .content > .inner > * {
-  padding-left: 3em;
-  width: 55%;
-}*/
+
 .Footer .content > .inner .about {
   @apply w-6/12 pl-0;
 }
@@ -104,19 +98,19 @@
   @apply [display:-moz-flex] [display:-ms-flex] flex w-[70em] mx-auto my-0;
 }
 .about {
-  @apply w-6/12 text-start pl-0;
+  @apply w-6/12 pl-0 text-start;
 }
 .about p {
   @apply w-[65%];
 }
 .contact {
-  @apply w-6/12 text-end pl-0;
+  @apply w-6/12 pl-0 text-end;
 }
 ul.actions {
   @apply [display:-moz-flex] [display:-ms-flex] flex cursor-default [list-style:none] ml-[-1em] mt-0 mb-[2em] mx-0 p-0;
 }
 ul.actions li {
-  @apply align-middle p-0;
+  @apply p-0 align-middle;
 }
 .button {
   @apply bg-transparent shadow-[inset_0_0_0_2px_#ffffff] text-white tracking-wider uppercase [transition:background-color_0.2s_ease-in-out,color_0.2s_ease-in-out] cursor-pointer inline-block text-[0.8em] font-bold h-[3.25em] leading-[3.35em] text-center no-underline whitespace-nowrap [-moz-appearance:none] [-webkit-appearance:none] [-ms-appearance:none] appearance-none px-[2em] py-0 rounded-[5px] border-0;
@@ -127,20 +121,14 @@ ul.actions li {
 .iconBulleted li {
   @apply relative block no-underline m-0 pl-[2em] px-0 py-4 border-b-[none];
 }
-/*
-.iconBulleted li a {
-  padding-left: 1rem;
-}
-*/
 .Social {
-  @apply flex m-0 p-0;
+  @apply flex p-0 m-0;
 }
 .Social a {
   @apply text-[2rem] pl-6;
 }
 p.copyright {
   @apply text-[0.8em] text-center bg-[rgba(0,0,0,0.8)] m-0 px-0 py-[3em];
-  /*background-color: rgb(37, 121, 188);*/
 }
 .Footer .copyright {
   @apply text-[0.8em] text-center m-0 px-0 py-[4em];
@@ -221,4 +209,23 @@ p.copyright {
 }
 body.is-mobile .Footer {
   @apply bg-scroll;
+}
+
+.FooterMultiColumn__logo {
+  @apply w-[200px];
+}
+.FooterMultiColumn__description {
+  @apply mt-[1.2rem];
+}
+.FooterMultiColumn__copyright {
+  @apply mt-4;
+}
+.FooterMultiColumn__menus ul {
+  @apply ml-[-0.75rem];
+}
+.FooterMultiColumn__menus li img {
+  @apply inline-block align-middle mr-[0.6rem];
+}
+.FooterMultiColumn__menus li a {
+  @apply block leading-tight text-inherit px-3 py-2 hover:no-underline hover:bg-[rgba(0,0,0,0.05)] hover:rounded-[3px];
 }
